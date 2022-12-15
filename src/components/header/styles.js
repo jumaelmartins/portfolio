@@ -6,11 +6,10 @@ export const Container = styled.div`
     height: 3rem;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    border: 2px solid rosybrown;
+    box-shadow: 0 0 0 3;
 `
 
 export const TitleContainer = styled.div`
-    border: 3px solid green;
     text-align: center;
     display: flex;
     white-space: nowrap;
@@ -18,7 +17,11 @@ export const TitleContainer = styled.div`
     font-size: .85rem;
     font-weight: 700;
     justify-content: center;
-    border: 2px solid rosybrown;
+    color: cyan;
+`
+export const MenuContainer = styled.div`
+    display: flex;
+    align-items: center;
 `
 
 export const Wrapper = styled.div`

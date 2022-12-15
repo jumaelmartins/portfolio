@@ -1,9 +1,11 @@
 import { Container, Strip, Wrapper } from "./styles";
 
 
-const Hamburguer = () => {
+const Hamburguer = ({onClick}) => {
+
+    
     return (
-        <Wrapper>
+        <Wrapper onClick={onClick}>
             <Container>
                 <Strip></Strip>
                 <Strip></Strip>

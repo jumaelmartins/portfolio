@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    background-color: green;
-    border: 2px solid rosybrown;
     display: flex;
     width: 32px;
     height: 32px;
@@ -10,19 +8,30 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-evenly;
     margin-right: .45rem;
+@media screen and (min-width: 668px){
+    display: none;
+}
 `
 
 export const Strip = styled.div`
+    visibility: visible;
     max-width: 80%;
-    background-color: yellow;
+    background-color: cyan;
     height: .25rem;
     width: 3rem;
-    border-radius: .5rem; 
+    border-radius: .5rem;
+@media screen and (min-width: 668px){
+    visibility: hidden;
+} 
 `
 export const Wrapper = styled.div`
-    background-color: blue;
-    border: 2px solid rosybrown;
+   
+    visibility: visible;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+@media screen and (min-width: 668px){
+    visibility: hidden;
+   
+}
 `
