@@ -26,5 +26,7 @@ export const MenuContainer = styled.div`
 
 export const Wrapper = styled.div`
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    flex-direction: row;
+    position: fixed;
 `

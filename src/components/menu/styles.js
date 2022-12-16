@@ -4,8 +4,8 @@ import { css } from "styled-components";
 export const Container = styled.div`
     
 
-${({variant}) => variant === "mobile" && css`
-    
+${({variant}) => variant === "mobile" && css`    
+
     @media screen and (max-width: 668px) {
     background-color: #FFFeFF;
     width: 100%;
@@ -73,7 +73,10 @@ export const MenuItems = styled.a`
        color: white;
        margin: 0 0 0 2rem;
        padding: .3rem;
-
+        
+       &:focus {
+            border-bottom: 3px cyan solid;
+       }
 
        &:hover {
             border-bottom: 3px cyan solid;
