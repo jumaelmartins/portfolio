@@ -7,6 +7,7 @@ export const Container = styled.div`
     display: grid;
     grid-template-columns: 1fr 3fr;
     box-shadow: 0 0 0 3;
+    
 `
 
 export const TitleContainer = styled.div`

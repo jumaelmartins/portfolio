@@ -35,7 +35,11 @@ export const ProjectContainer = styled.div`
     img {
         margin: 5rem;
         width: 128px;
-        height: 128px;  
+        height: 128px; 
+        
+        &:hover {
+            cursor: pointer;
+        }
     }
 `
 

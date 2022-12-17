@@ -4,7 +4,7 @@ export const Container = styled.div`
     background-color: #f5f5ff;
     color: #1C1C1C;
     width: 100%;
-    height: 100vh;
+   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,17 +23,18 @@ export const Container = styled.div`
 export const TitleContainer = styled.div`
     margin-top: 5rem;
     width: 100%;
-    height: 100vh;
+   
     display: flex;
     flex-direction: column;
     align-items: center;
 
     @media screen and (min-width: 668px){
         height: 25rem;
+
     }
 
     a {    
-        margin: 1rem;
+        margin: .5rem;
         background-color: cyan;
         color: white;
         text-decoration: none;
@@ -122,8 +123,7 @@ export const ImgContainer = styled.div `
 export const ImgStyle = styled.img`
     display: flex;
     align-items: center;
-    height: 1rem;
-    width: 1rem;
+
     width: 180px;
     height: 200px;
     border-radius: 50%;
@@ -144,6 +144,10 @@ export const ImgStyle = styled.img`
 export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    
     width: 100%;
+
+    @media screen and (min-width: 668px) {
+        height: 100vh;
+    }
 `

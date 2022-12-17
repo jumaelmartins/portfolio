@@ -10,8 +10,8 @@ import Contact from "../../components/contact";
 
 const HomePage = () => {
   return (<Container>
-      <Header/>
       <Home/>
+      <Header/>
       <About/>
       <Projects/>
       <Skills/>
