@@ -2,17 +2,17 @@ import { CardImg, CardLink, Column, Row, Container, TitleCard, Wrapper } from ".
 import Portifolio from "../../assets/img/portifolio.png"
 
 
-const Card = ( {variant, title} ) => {
+const Card = ( {img, title, run, repo} ) => {
     return (
         <Wrapper>
             <Container>
                 <Column>
                     <TitleCard>{title}</TitleCard>
-                    <CardImg src={Portifolio}></CardImg>
+                    <CardImg src={img}></CardImg>
                 </Column>
                 <Row>
-                    <CardLink href="#"> Run </CardLink>
-                    <CardLink href="#"> Repositorio </CardLink>
+                    <CardLink href={run} target="_blank"> Run </CardLink>
+                    <CardLink href={repo} target="_blank"> Repositorio </CardLink>
                 </Row>
             </Container>
         </Wrapper>

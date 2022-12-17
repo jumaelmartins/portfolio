@@ -8,6 +8,8 @@ export const Container = styled.div`
     width: 11rem;    
     border: 1px solid gray;
     
+    flex-grow: 0;
+    flex-shrink: 1;
     margin: .7rem;
     flex-direction: column;
     &:hover {
@@ -108,16 +110,26 @@ export const Wrapper = styled.div`
 `
 export const CardImg = styled.img`
     margin-top: 2px;
-    height: 98%;    
-    width: 98%;
+    height: 7.5rem;    
+    width: 10.5rem;
     border-radius: 5px;
+    
+    @media screen and (min-width: 392px) {
+        height: 8rem;    
+        width: 14.6rem;
+
+    }
 
     @media screen and (min-width: 668px) {
-        height: 70%;
+        height: 4.8rem;    
+        width: 11.8rem;
+
     }
 
     @media screen and (min-width: 1024px) {
-        height: 98%;
+        height: 11rem;    
+        width: 16.5rem;
+
     }
 
     align-self: center;

@@ -5,6 +5,7 @@ import Projects from "../../components/projects";
 import Header from "../../components/header";
 import { Container } from "./styles";
 import Skills from "../../components/skills";
+import Contact from "../../components/contact";
 
 
 const HomePage = () => {
@@ -14,6 +15,7 @@ const HomePage = () => {
       <About/>
       <Projects/>
       <Skills/>
+      <Contact/>
 </Container>)
 };
 

@@ -4,14 +4,15 @@ import Photo from "../../assets/img/photo.png"
 
 
 
-const Home = (variante) => {
+const Home = () => {
     return (
     <Wrapper>
         <Container>
             <TitleContainer>
-                <Text>Helo I'm Jumael </Text>
-                <Title> Front-End Web Developer</Title>
-                <Text>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum minus non est vitae voluptatibus excepturi. Voluptatum deleniti facilis, libero totam, consequatur consectetur minus beatae reprehenderit quas recusandae ratione, maiores perspiciatis!</Text>
+                <Text>Olá, Sou Jumael </Text>
+                <Title> Densevolvedor Front-End</Title>
+                <Text>Bem Vindo(a)! ao meu site persoal! Criei esse Projeto como forma de estudo e apresentação Profissional do meu trabalho. trata-se de uma LandPage Com uma apresentação visual sobre mim, contendo alguns dos meus projetos e meus contatos (caso você se interesse pelos meus serviços). Utilizei para a criação desta Pagina a Biblioteca ReactJS juntamente com Styled-Components. Clique no Botão Abaixo para ver o Repositorio contendo o Codigo Fonte do Site no meu GitHub.</Text>
+                <a href="https://github.com/jumaelmartins/portfolio" target="_blank">Repositorio</a>
             </TitleContainer>
             <ImgContainer>
                 <ImgStyle src={Photo} alt={'Photo'}/>

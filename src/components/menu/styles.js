@@ -17,6 +17,7 @@ ${({variant}) => variant === "mobile" && css`
 
     @media screen and (min-width: 668px;) {
         display: none;
+        visibility: hidden;
     }
     `
 }
@@ -73,10 +74,6 @@ export const MenuItems = styled.a`
        color: white;
        margin: 0 0 0 2rem;
        padding: .3rem;
-        
-       &:focus {
-            border-bottom: 3px cyan solid;
-       }
 
        &:hover {
             border-bottom: 3px cyan solid;

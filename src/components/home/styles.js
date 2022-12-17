@@ -32,6 +32,47 @@ export const TitleContainer = styled.div`
         height: 25rem;
     }
 
+    a {
+        margin: 1rem;
+        background-color: cyan;
+        color: white;
+        text-decoration: none;
+        padding: 1rem;
+        border-radius: 3rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        position: relative;
+        display: flex;
+        
+
+        &:hover{
+            
+            cursor: pointer;
+
+            &::after {
+            transition: 1s;
+            content:'';
+            border-radius: 3rem;
+            border: solid 1px cyan;
+            width: 180px;
+            height: 73px;
+            position: absolute;
+            display: flex;
+            left: -8.3px;
+            top: -8.3px;
+
+        }
+        }
+
+        &:visited{
+            background-color: darkcyan;
+            &::after {
+                border: solid 1px darkcyan;
+            }
+        }
+       
+
+    }
 
 `
 export const Title = styled.h1`
