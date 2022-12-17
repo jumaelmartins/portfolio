@@ -28,6 +28,12 @@ export const Container = styled.div`
         height: 15rem;
         width: 17rem;
     }
+
+
+    @media screen and (min-height: 1181px){
+        height: 18rem;
+        width: 20rem;
+    }
 `
 export const TitleCard = styled.h4`
     display: flex;
@@ -43,6 +49,8 @@ export const CardLink = styled.a`
     text-decoration: none;
     background-color: cyan;
     
+    text-transform: uppercase;
+    font-weight: bold;
     color: white;
     padding: 0px 2px;
 

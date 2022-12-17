@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    
     background-color: #f5f5ff;
     color: #1C1C1C;
     width: 100%;
@@ -19,22 +20,22 @@ export const Container = styled.div`
     
     @media screen and (min-height: 916px){
         height: 100vh;
-    }
-
+    } 
 `
 
 export const ProjectContainer = styled.div`
-    width: 95%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
+    text-align: center;
+    
+    
+    justify-content: center;
 
-    @media screen and (min-width: 668px){
-        flex-direction: row;
-        flex-wrap: wrap;
-        
-        justify-content: center;
+   
+    img {
+        margin: 5rem;
+        width: 128px;
+        height: 128px;  
     }
 `
 
