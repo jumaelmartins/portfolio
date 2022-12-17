@@ -32,7 +32,7 @@ export const TitleContainer = styled.div`
         height: 25rem;
     }
 
-    a {
+    a {    
         margin: 1rem;
         background-color: cyan;
         color: white;
@@ -41,9 +41,14 @@ export const TitleContainer = styled.div`
         border-radius: 3rem;
         font-size: 1.5rem;
         font-weight: bold;
-        position: relative;
-        display: flex;
         
+        
+    }
+    @media screen and (min-width: 668px) {
+        
+    
+    a {
+        position: relative;
 
         &:hover{
             
@@ -73,9 +78,10 @@ export const TitleContainer = styled.div`
        
 
     }
-
+}
 `
 export const Title = styled.h1`
+    
     font-size: 1.7rem;
     display:flex;
     color: cyan;
