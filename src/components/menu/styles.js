@@ -36,9 +36,8 @@ ${({variant}) => variant === "mobile" && css`
     }
     `}
 `
-export const MenuItems = styled.a`
-     
-        
+export const MenuItems = styled.a` 
+
     ${({variant}) => variant === "mobile" && css`
 
         @media screen and (max-width: 668px) {
@@ -80,7 +79,14 @@ export const MenuItems = styled.a`
             transition: .3s;
        }
     }
-    `}
+
+    ${({select}) => select === "true" && css`
+                border-bottom: 3px cyan solid;
+                transition: .3s;
+        }
+        `}
+
+     `}
 
 
 `

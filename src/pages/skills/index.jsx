@@ -1,13 +1,15 @@
 
-import Home from "../../components/home";
 import Header from "../../components/header";
 import { Container } from "./styles";
+import Skills from "../../components/skills";
 
-const HomePage = () => {
+
+
+const SkillsPage = () => {
   return (<Container>
-      <Home/>
+      <Skills/>
       <Header/>
 </Container>)
 };
 
-export default HomePage;
+export default SkillsPage;

@@ -3,7 +3,6 @@ import { Container, AboutContainer, Wrapper, Title, Text, SubTitleContainer, Sid
 import WebIcon from '@mui/icons-material/Web';
 const AboutCard = ({title, leftIcon, text}) => {
     return (
-
        <SideContainer>
             <ListContainer>
                 {leftIcon ? (<LeftIcon>{leftIcon}</LeftIcon>) : null}
@@ -13,7 +12,6 @@ const AboutCard = ({title, leftIcon, text}) => {
                 </SubListContainer>
             </ListContainer>
        </SideContainer>
-    
 )
 }
 

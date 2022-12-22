@@ -1,13 +1,13 @@
-
-import Home from "../../components/home";
 import Header from "../../components/header";
 import { Container } from "./styles";
+import Contact from "../../components/contact";
 
-const HomePage = () => {
+
+const ContactPage = () => {
   return (<Container>
-      <Home/>
+      <Contact/>
       <Header/>
 </Container>)
 };
 
-export default HomePage;
+export default ContactPage;

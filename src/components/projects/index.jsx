@@ -1,13 +1,14 @@
 import Card from '../card'
 import { Container, ProjectContainer, Wrapper, Title, Column, Row} from "./styles";
 import Portifolio from "../../assets/img/portifolio.png"
-import EmBreve from "../../assets/img/embreve.png"
+import EmBreve from "../../assets/img/embreve.png"  
+import { ButtonContainer } from '../button/styles';
+import Button from '../button';
 
 
 const Projects = () => {
     return (
    <Wrapper>
-        <a name="projects"/>
         <Container>
             <Title>PROJECTS</Title>
             <ProjectContainer>
@@ -24,8 +25,9 @@ const Projects = () => {
                     </Row>
                   </Column>
             </ProjectContainer>
+            <Button variant="secondary"value={'load more'}></Button>
         </Container>
-        </Wrapper>
+    </Wrapper>
 )
 }
 

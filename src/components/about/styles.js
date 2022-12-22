@@ -1,20 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    background-color: #f5f5ff;
-    color: #1C1C1C;
     width: 100%;
-    
     display: flex;
     flex-direction: column;
+    
     align-items: center;
     text-align: center;
     padding-top: 5rem;
    
-
-    @media screen and (min-width: 668px){
-        height: 100vh;
-    }
+    box-sizing: border-box;
 `
 
 export const AboutContainer = styled.div`
@@ -22,16 +17,10 @@ export const AboutContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    h2 {
-        
-    }
 
     @media screen and (min-width: 668px){
         text-align: left;
     }
-
-
 `
 export const Title = styled.h1`
     font-size: 1.7rem;

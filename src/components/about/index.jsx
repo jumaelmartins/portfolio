@@ -1,12 +1,11 @@
 import AboutCard from "../aboutCard";
 import { Container, AboutContainer, Wrapper, Title, Text, SubTitleContainer, SideContainer} from "./styles";
 import WebIcon from '@mui/icons-material/Web';
-const About = () => {
+const About = ({value}) => {
     return (
     <Wrapper>
-        <a name="about"></a>
         <Container>
-            <Title> ABOUT ME</Title>
+            <Title>ABOUT ME</Title>
             <AboutContainer>
                 <SubTitleContainer>
                     <h3>Olá, Eu Sou </h3> <h2>Jumael Martins,</h2> <h3>Desenvolvedor Front-End</h3>

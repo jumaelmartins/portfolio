@@ -10,7 +10,6 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 const Contact = () => {
     return (
    <Wrapper>
-        <a name="contact"/>
         <Container>
             <Title>CONTACT ME</Title>
             <ProjectContainer>

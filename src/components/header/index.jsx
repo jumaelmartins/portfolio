@@ -5,7 +5,7 @@ import { useState } from "react";
 
 
 
-const Header = () => {
+const Header = ({select}) => {
     const [menu, setMode] = useState(false);
     const ToggleMode = () => {
         setMode(!menu) 
@@ -16,7 +16,7 @@ const Header = () => {
         <Container>
             <TitleContainer>JUMAEL MARTINS</TitleContainer>
             <MenuContainer>
-                <Menu variant="desktop"/>
+                <Menu variant="desktop" select={select}/>
                 <Hamburguer onClick={ToggleMode}/>
             </MenuContainer>
             

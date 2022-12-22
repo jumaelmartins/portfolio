@@ -8,12 +8,14 @@ const Card = ( {img, title, run, repo} ) => {
             <Container>
                 <Column>
                     <TitleCard>{title}</TitleCard>
-                    <CardImg src={img}></CardImg>
+                    <CardImg>
+                        <img src={img}/>
+                    </CardImg>
+                    <Row>
+                        <CardLink href={run} target="_blank"> Run </CardLink>
+                        <CardLink href={repo} target="_blank"> Repositorio </CardLink>
+                    </Row>
                 </Column>
-                <Row>
-                    <CardLink href={run} target="_blank"> Run </CardLink>
-                    <CardLink href={repo} target="_blank"> Repositorio </CardLink>
-                </Row>
             </Container>
         </Wrapper>
     )

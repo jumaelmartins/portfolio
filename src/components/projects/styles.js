@@ -8,18 +8,13 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    box-sizing: border-box;
     text-align: center;
     padding-top: 5rem;
 
     padding-bottom: 10rem;
-    
-   
 
-
-    
-    @media screen and (min-height: 916px){
-        height: 100vh;
-    }
 
 `
 
@@ -27,13 +22,12 @@ export const ProjectContainer = styled.div`
     width: 95%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
     flex-wrap: wrap;
+    flex: 0 3 0;
 
     @media screen and (min-width: 668px){
         flex-direction: row;
-        flex-wrap: wrap;
-        
         justify-content: center;
     }
 `
@@ -41,8 +35,8 @@ export const ProjectContainer = styled.div`
 export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
-    
-   
+    width: 100%;
+
     @media screen and (min-width: 668px) {
         flex-direction: row;
     }
@@ -52,11 +46,13 @@ export const Title = styled.h1`
     font-size: 1.7rem;
     display:flex;
     color: cyan;
+    
     margin: 1rem;
     border: 1PX solid cyan;
     width: 95%;
+    
+    flex: 0 3 0;
     justify-content: center;
-
     @media screen and (min-width: 393px){
         font-size: 3rem;
     }
@@ -68,9 +64,13 @@ export const Title = styled.h1`
 `
 
 export const Column = styled.div`
-  
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+    width: 100%;
+    flex: 0 3 0;
 
 `
 export const Row = styled.div`
@@ -78,6 +78,12 @@ export const Row = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    
+    width: 100%;
+    flex: 0 3 0;
+
+
+   
     height: 100%;
     align-items: center;
     
