@@ -18,6 +18,14 @@ export const Container = styled.div`
     &:hover {
         cursor: pointer;
         box-shadow: 0 0 0 0;
+        animation: up 3s ease-in-out infinite;
+    }
+
+    @keyframes up {
+        0%{transform:translateY(0px)}
+        33%{transform:translateY(10px)}
+        66%{transform:translateY(3px)}
+        100%{transform:translateY(0px)}
     }
 
     @media screen and (min-width: 392px){

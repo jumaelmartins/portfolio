@@ -2,14 +2,22 @@ import styled from "styled-components";
 import { css } from "styled-components";
 
 export const Container = styled.div`
-    
+
+@keyframes menu {
+    from{transform:translateX(280px)}
+    to{transform:translateX(0)}
+}
 
 ${({variant}) => variant === "mobile" && css`    
 
     @media screen and (max-width: 668px) {
-    background-color: #FFFeFF;
+    background-color: lightgray;
     width: 100%;
     height: 100vh;
+    opacity: .95;
+    
+    animation: menu 1.3s ease-in forwards;
+    transition: 3s;
     display: flex;
     flex-direction: column;
     text-align: right;
@@ -46,6 +54,7 @@ export const MenuItems = styled.a`
         line-height: 5rem;
         color: cyan; 
         margin-right: .3rem;
+
 
         &:hover {
             transition: .2s;
