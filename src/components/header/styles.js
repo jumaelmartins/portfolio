@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.header`
     background-color: #161616;
     width: 100%;
-    height: 3rem;
+    height: 3.5rem;
+    
     display: flex;
-
+    box-sizing: border-box;
     justify-content: space-between;
    // grid-template-columns: 1fr 3fr;
     padding: 0 .5rem;
@@ -33,9 +34,12 @@ export const TitleContainer = styled.div`
 `
 
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.section`
     display: flex;
     width: 100%;
     flex-direction: column;
+    
     position: fixed;
+    flex: 0 1;
+    box-sizing: border-box;
 `

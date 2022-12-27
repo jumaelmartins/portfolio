@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { css } from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.nav`
 
 @keyframes menu {
     from{transform:translateX(280px)}
@@ -100,7 +100,7 @@ export const MenuItems = styled.a`
 
 `
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.section`
     display: flex;
     width: 100%;
 `
