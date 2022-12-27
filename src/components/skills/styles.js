@@ -183,7 +183,7 @@ export const Row = styled.div`
 export const Progress = styled.div`
   width: 180px;
   height: 10px;
-  background-color: white;
+  background-color: lightgray;
   border-radius: 5px;
   position: relative;
 
