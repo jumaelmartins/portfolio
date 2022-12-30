@@ -44,13 +44,14 @@ export const Title = styled.h1`
 `;
 
 export const Text = styled.p`
-  font-size: .85rem;
+  font-size: 0.85rem;
   display: flex;
   margin: 0.3rem;
   font-weight: normal;
   
+  box-sizing: border-box;
   line-height: 1.7rem;
-  align-self: flex-start;
+  
 
   @media screen and (min-width: 393px) {
     font-size: 0.9rem;
@@ -58,11 +59,19 @@ export const Text = styled.p`
 
   @media screen and (min-width: 668px) {
     line-height: 2rem;
+    margin-left: 25px;
+    width: 500px;
+    
   }
 
   @media screen and (min-width: 1024px) {
     line-height: 2.5rem;
     font-size: 1.15rem;
+    width: 720px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1024px;
   }
 `;
 
@@ -112,5 +121,42 @@ export const SideContainer = styled.div`
     text-align: start;
     font-size: 30px;
     color: cyan;
+  }
+`;
+
+export const ImgStyle = styled.img`
+  display: flex;
+  align-items: center;
+  width: 180px;
+
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid cyan;
+
+  flex-shrink: 1;
+  box-sizing: border-box;
+
+  @media screen and (min-width: 450px) {
+    width: 260px;
+    height: 280px;
+  }
+
+  @media screen and (min-width: 842px) {
+    width: 380px;
+    height: 380px;
+  }
+`;
+
+export const Sobre = styled.article`
+
+  width: 100%;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 668px){
+    flex-direction: row;
   }
 `;

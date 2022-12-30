@@ -11,8 +11,10 @@ export const Container = styled.main`
 
   text-align: center;
   box-sizing: border-box;
-  flex-shrink: 1;
-  @media screen and (min-width: 668px) {
+  flex: 0 2;
+ 
+
+  @media screen and (min-width: 1025px) {
     padding-top: 5rem;
     display: flex;
     flex-direction: row;
@@ -20,18 +22,33 @@ export const Container = styled.main`
     flex: 1fr 1fr;
     align-items: center;
   }
+
 `;
 export const TitleContainer = styled.div`
-  width: 100%;
+  width: 256px;
   margin: 3.5rem auto;
 
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  @media screen and (min-width: 668px) {
-    height: 25rem;
+  @media screen and (min-width: 320px) {
+    width: 300px;
   }
+
+  @media screen and (min-width: 425px) {
+    width: 400px;
+  }
+
+  @media screen and (min-width: 668px) {
+    width: 720px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1024px;
+  }
+
 `;
 export const Title = styled.h1`
   font-size: 1.7rem;
@@ -83,11 +100,45 @@ export const ImgContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 72px;
+
+  flex: 0 2 1;
+  
+  width: 256px;
+  height: 256px;
   box-sizing: border-box;
+  img {
+    box-sizing: border-box;
+    width: 256px;
+    height: 256px;
+  }
+
+  @media screen and (min-width: 320px) {
+    height: 320px;
+    width: 320px;
+
+    img {
+      width: 256px;
+      height: 256px;
+    }
+  }
 
   @media screen and (min-width: 668px) {
-    width: 100%;
+    width: 600px;
+    img {
+      width: 380px;
+      height: 380px;
+    }
   }
+
+  @media screen and (min-width: 1440px) {
+    width: 600px;
+    img {
+      width: 512px;
+      height: 512px;
+    }
+  }
+
 `;
 
 export const ImgStyle = styled.img`
@@ -118,7 +169,8 @@ export const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
 
-  @media screen and (min-width: 668px) {
-    height: 100vh;
+  align-items: center;
+  @media screen and (min-height: 599px) {
+    height: 1024px;
   }
 `;

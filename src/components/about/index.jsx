@@ -7,8 +7,11 @@ import {
   Text,
   SubTitleContainer,
   SideContainer,
+  ImgStyle,
+  Sobre
 } from "./styles";
 import WebIcon from "@mui/icons-material/Web";
+import Photo from "../../assets/img/photo.png"
 const About = ({ value }) => {
   return (
     <Wrapper>
@@ -19,6 +22,8 @@ const About = ({ value }) => {
             <h3>Olá, Eu Sou </h3> <h2>Jumael Martins,</h2>{" "}
             <h3>Desenvolvedor Front-End</h3>
           </SubTitleContainer>
+          <Sobre>
+          <ImgStyle src={Photo}/>
           <Text>
             Me chamo Jumael, sou um apaixonado por Tecnologia, criativo e
             bastante curioso. iniciei meus estudos em TI pela área de Infra,
@@ -39,6 +44,8 @@ const About = ({ value }) => {
             <br />
             Sou Graduado em Redes de Computadores.
           </Text>
+          
+          </Sobre>
         </AboutContainer>
         <SideContainer>
           <br />
