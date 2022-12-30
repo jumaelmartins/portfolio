@@ -16,8 +16,7 @@ ${({variant}) => variant === "mobile" && css`
     height: 100vh;
     opacity: .95;
     
-    animation: menu 1.3s ease-in forwards;
-    transition: 3s;
+    animation: menu .1s ease-out;
     display: flex;
     flex-direction: column;
     text-align: right;

@@ -12,7 +12,7 @@ export const Container = styled.div`
     
 
     :hover {
-        animation: spin 2s ease-in-out, infinite;
+        animation: spin 1.3s ease-in-out, infinite;
         
     }
 

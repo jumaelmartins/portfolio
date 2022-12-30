@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    background-color: #f5f5ff;
+    background-color: white;
     color: #1C1C1C;
     width: 100%;
     
@@ -14,7 +14,8 @@ export const Container = styled.div`
     padding-top: 5rem;
 
     padding-bottom: 10rem;
-
+    justify-content: center;
+ 
 
 `
 
@@ -36,6 +37,9 @@ export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
+
+    justify-content: center;
+    align-items: center;
 
     @media screen and (min-width: 668px) {
         flex-direction: row;

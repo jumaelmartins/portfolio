@@ -9,7 +9,7 @@ export const Container = styled.div`
     max-width: 100%;
     width: 11rem;    
     border: 1px solid gray;
-    
+
     box-shadow: 2px 2px 3px 1px gray;
     margin: .7rem;
     flex-direction: column;
@@ -45,8 +45,8 @@ export const Container = styled.div`
 
 
     @media screen and (min-height: 1181px){
-        height: 18rem;
-        width: 20rem;
+        height: 16rem;
+        width: 18rem;
     }
 `
 export const TitleCard = styled.h4`
@@ -91,8 +91,9 @@ export const Wrapper = styled.div`
     width: 100%;
 
     box-sizing: border-box;
-    flex: 0 3 0;
+    flex: 0 4 0;
 
+       
     display: flex;
     justify-content: center;
     margin: 3px;    
