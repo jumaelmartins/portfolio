@@ -141,28 +141,6 @@ export const ImgContainer = styled.div`
 
 `;
 
-export const ImgStyle = styled.img`
-  display: flex;
-  align-items: center;
-  width: 180px;
-
-  height: 200px;
-  border-radius: 50%;
-  border: 5px solid cyan;
-
-  flex-shrink: 1;
-  box-sizing: border-box;
-
-  @media screen and (min-width: 450px) {
-    width: 260px;
-    height: 280px;
-  }
-
-  @media screen and (min-width: 842px) {
-    width: 360px;
-    height: 380px;
-  }
-`;
 
 export const Wrapper = styled.div`
   display: flex;

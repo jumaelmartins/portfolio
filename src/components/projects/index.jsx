@@ -5,6 +5,7 @@ import EmBreve from "../../assets/img/embreve.png"
 import CalculadoraImc from "../../assets/img/calculadora.imc.png" 
 import Pokedex from "../../assets/img/pokedex.png"  
 import Button from '../button';
+import LandinPage from '../../assets/img/landinPage.png'
 
 
 const Projects = () => {
@@ -20,7 +21,7 @@ const Projects = () => {
                         <Card title={'POKEDEX'} img={Pokedex} run={'https://jumaelmartins.github.io/Pokedex/'} repo={'https://github.com/jumaelmartins/portfolio.git'}/>
                     </Row>
                     <Row>
-                        <Card title={'PROJETO 4'} img={EmBreve}/>
+                        <Card title={'LAND PAGE'} img={LandinPage} alt={'Capa do Projeto de Uma Landing Page'} run={'https://jumaelmartins.github.io/Landing-Page/'} repo={'https://github.com/jumaelmartins/Landing-Page.git'}/>
                         <Card title={'PROJETO 5'} img={EmBreve}/>
                         <Card title={'PROJETO 6'} img={EmBreve}/>
                     </Row>

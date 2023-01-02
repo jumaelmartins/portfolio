@@ -93,7 +93,7 @@ const Skills = ({ percentual, variant }) => {
               </Column>
               <Column>
                 <Svglogo
-                variant={'github'}
+                variant ={'github'}
                   width="25px"
                   height="25px"
                   viewBox="0 -0.5 25 25"
