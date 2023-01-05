@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <Wrapper>
       <Container>
-        <p>@2022 All Rights Reserved</p>
+        <p>&copy; 2022 - 2023 All Rights Reserved</p>
         
       </Container>
     </Wrapper>

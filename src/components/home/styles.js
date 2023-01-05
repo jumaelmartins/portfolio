@@ -1,13 +1,16 @@
 import styled from "styled-components";
 
+
 export const Container = styled.main`
-  background-color: white;
   width: 100%;
   padding: 0 1rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: "url('../../assets/img/dragon-scales.svg')";
+  background-position: center;
+  background-size: cover;
 
   text-align: center;
   box-sizing: border-box;

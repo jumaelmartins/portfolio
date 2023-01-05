@@ -38,8 +38,9 @@ export const ButtonContainer = styled.a`
     &:hover {
       cursor: pointer;
       animation-play-state: paused;
+      opacity: 0.5;
 
-      &::after {
+     /* &::after {
         transition: 1s;
         content: "";
         border-radius: 3rem;
@@ -50,7 +51,7 @@ export const ButtonContainer = styled.a`
         display: flex;
         left: -7px;
         top: -7.7px;
-      }
+      }*/
     }
   }
 

@@ -1,7 +1,7 @@
 
 import { Container, TitleContainer, Wrapper, Title, Text, ImgContainer, ImgStyle } from "./styles";
 import Button from "../button";
-import ImgCoding from "../../assets/img/programing.gif"
+import ImgCoding from "../../assets/img/Coding _Two Color.svg"
 
 
 const Home = () => {
