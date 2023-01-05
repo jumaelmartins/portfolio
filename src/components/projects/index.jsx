@@ -18,7 +18,7 @@ const Projects = () => {
                     <Row>
                         <Card title={'MEU PORTIFOLIO'} img={Portifolio} run={'https://portfolio-two-wheat-83.vercel.app/'} repo={'https://github.com/jumaelmartins/portfolio'}/>
                         <Card title={'CALCULADORA IMC'} img={CalculadoraImc} run={'https://jumaelmartins.github.io/Calculadora-IMC/'} repo={'https://github.com/jumaelmartins/Calculadora-IMC.git'}/>
-                        <Card title={'POKEDEX'} img={Pokedex} run={'https://jumaelmartins.github.io/Pokedex/'} repo={'https://github.com/jumaelmartins/portfolio.git'}/>
+                        <Card title={'POKEDEX'} img={Pokedex} run={'https://jumaelmartins.github.io/Pokedex/'} repo={'https://github.com/jumaelmartins/pokedex.git'}/>
                     </Row>
                     <Row>
                         <Card title={'LAND PAGE'} img={LandinPage} alt={'Capa do Projeto de Uma Landing Page'} run={'https://jumaelmartins.github.io/Landing-Page/'} repo={'https://github.com/jumaelmartins/Landing-Page.git'}/>

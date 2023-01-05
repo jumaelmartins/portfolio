@@ -10,7 +10,7 @@ export const Container = styled.header`
     justify-content: space-between;
    // grid-template-columns: 1fr 3fr;
     padding: 0 .5rem;
-    box-shadow: 0 3px 7px 3px black;
+    box-shadow: 0 3px 3px 3px black;
     @media screen and (min-width: 668px) {
         padding: 0 1rem; 
     }
