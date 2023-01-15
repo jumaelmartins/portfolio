@@ -4,14 +4,12 @@ const GlobalStyle = createGlobalStyle`
     * {
         margin: 0;
         padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        color: #1E1A1A;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        box-sizing:border-box;
     }
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        color: #1E1A1A;
+
+    html {
+        font-size: 62.5%
     }
 
 `

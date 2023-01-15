@@ -1,157 +1,184 @@
 import styled from "styled-components";
 
-
-export const Container = styled.main`
+export const Container = styled.div`
   width: 100%;
-  padding: 0 1rem;
-
   display: flex;
+  height: 100vh;
+
   flex-direction: column;
   align-items: center;
-  background-image: "url('../../assets/img/dragon-scales.svg')";
-  background-position: center;
-  background-size: cover;
-
   text-align: center;
-  box-sizing: border-box;
-  flex: 0 2;
- 
 
-  @media screen and (min-width: 1025px) {
-    padding-top: 5rem;
-    display: flex;
-    flex-direction: row;
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
 
-    flex: 1fr 1fr;
     align-items: center;
+    max-width: 120rem;
   }
 
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 7rem auto;
+    width: 256px;
+    height: 256px;
+
+    img {
+      width: 256px;
+      height: 256px;
+    }
+
+    @media screen and (min-width: 320px) {
+      height: 320px;
+      width: 320px;
+
+      img {
+        width: 256px;
+        height: 256px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      margin: 0 auto;
+      img {
+        width: 380px;
+        height: 380px;
+      }
+    }
+
+    @media screen and (min-width: 1440px) {
+      img {
+        width: 512px;
+        height: 512px;
+      }
+    }
+  }
 `;
-export const TitleContainer = styled.div`
+
+export const Title = styled.section`
   width: 256px;
   margin: 3.5rem auto;
 
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  @media screen and (min-width: 320px) {
-    width: 300px;
+  div {
+    width: 14rem;
+    justify-content: space-around;
+    display: flex;
+    font-size: 3.2rem;
+    margin: 2rem auto;
   }
 
-  @media screen and (min-width: 425px) {
-    width: 400px;
-  }
+  h2 {
+    font-size: 2rem;
+    display: flex;
+    color: cyan;
+    margin: 1rem;
 
-  @media screen and (min-width: 668px) {
-    width: 720px;
-  }
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 2.5s steps(13), blink 2.5s steps(13) forwards;
+    border-right: 5px solid black;
 
-  @media screen and (min-width: 1440px) {
-    width: 1024px;
-  }
-
-`;
-export const Title = styled.h1`
-  font-size: 1.7rem;
-  display: flex;
-  color: cyan;
-  margin: 1rem;
-
-  @keyframes titulo {
-    0% {
-      color: white;
-    }
-    50% {
-      color: lightcyan;
-    }
-    100% {
-      color: cyan;
+    @media screen and (min-width: 768px) {
+      font-size: 3.5rem;
     }
   }
 
-  @media screen and (min-width: 450px) {
-    font-size: 2.5rem;
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
   }
 
-  @media screen and (min-width: 842px) {
-    font-size: 3rem;
+  @keyframes typewriter {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 80%;
+    }
+  }
+  @keyframes blink {
+    from {
+      border-color: black;
+    }
+    to {
+      border-color: transparent;
+    }
   }
 `;
 
 export const Text = styled.p`
-  font-size: 12px;
   display: flex;
   margin: 0.1rem;
+  font-size: 1rem;
 
   line-height: 5px;
   font-weight: normal;
   line-height: 1.5rem;
 
   @media screen and (min-width: 450px) {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 2rem;
   }
 
   @media screen and (min-width: 842px) {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 2.5rem;
   }
 `;
-export const ImgContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 72px;
 
-  flex: 0 2 1;
-  
-  width: 256px;
-  height: 256px;
-  box-sizing: border-box;
-  img {
-    box-sizing: border-box;
-    width: 256px;
-    height: 256px;
-  }
-
-  @media screen and (min-width: 320px) {
-    height: 320px;
-    width: 320px;
-
-    img {
-      width: 256px;
-      height: 256px;
-    }
-  }
-
-  @media screen and (min-width: 668px) {
-    width: 600px;
-    img {
-      width: 380px;
-      height: 380px;
-    }
-  }
-
-  @media screen and (min-width: 1440px) {
-    width: 600px;
-    img {
-      width: 512px;
-      height: 512px;
-    }
-  }
-
-`;
-
-
-export const Wrapper = styled.div`
+export const MainBG = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100vh;
 
-  align-items: center;
-  @media screen and (min-height: 599px) {
-    height: 1024px;
+  background: linear-gradient(#d8e7eb, #ffffff);
+`;
+
+export const GitHub = styled.a`
+  text-decoration: none;
+
+  :visited {
+    color: inherit;
+  }
+
+  :hover {
+    transform: scale(1.1);
+    color: gray;
+    cursor: pointer;
+  }
+`;
+
+export const Linkedin = styled.a`
+  text-decoration: none;
+
+  :visited {
+    color: inherit;
+  }
+
+  :hover {
+    transform: scale(1.1);
+    color: royalblue;
+    cursor: pointer;
+  }
+`;
+
+export const WhatsApp = styled.a`
+  text-decoration: none;
+
+  :visited {
+    color: inherit;
+  }
+  :hover {
+    transform: scale(1.1);
+    color: green;
+    cursor: pointer;
   }
 `;

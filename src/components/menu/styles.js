@@ -8,34 +8,47 @@ export const Container = styled.nav`
     to{transform:translateX(0)}
 }
 
+${({active}) => active !== true && css`
+    display: none;
+`}
+
+
+
 ${({variant}) => variant === "mobile" && css`    
 
-    @media screen and (max-width: 668px) {
-    background-color: lightgray;
-    width: 100%;
+    @media screen and (max-width: 768px) {
+    background-color: gray;
+    opacity: .4;
+    z-index: 2;
+    top: 5.5rem;
+    left: 0;
+    right: 0;
+
+    padding: 0 3rem;
+    margin: 0 auto;
+
+
+    flex-direction: column;
     height: 100vh;
-    opacity: .95;
-    
+    position: absolute;
     animation: menu .5s ease-out;
     display: flex;
-    flex-direction: column;
-    text-align: right;
     }
 
-    @media screen and (min-width: 668px;) {
+    
+
+
+    @media screen and (min-width: 768px;) {
         display: none;
-        visibility: hidden;
     }
     `
 }
-
-
 
     ${({variant}) => variant === "desktop" && css`
         
         display: none;   
 
-        @media screen and (min-width: 668px) {
+        @media screen and (min-width: 768px) {
         width: 100%;
         display: flex;
         align-items: center;
@@ -47,9 +60,9 @@ export const MenuItems = styled.a`
 
     ${({variant}) => variant === "mobile" && css`
 
-        @media screen and (max-width: 668px) {
+        @media screen and (max-width: 768px) {
         text-decoration: none;
-        font-size: 1.9rem;
+        font-size: .85rem;
         line-height: 5rem;
         color: cyan; 
         margin-right: .3rem;
@@ -64,7 +77,7 @@ export const MenuItems = styled.a`
         }
     }
 
-    @media screen and (min-width: 668px) {
+    @media screen and (min-width: 768px) {
         display: none;
     }
 
@@ -99,7 +112,3 @@ export const MenuItems = styled.a`
 
 `
 
-export const Wrapper = styled.section`
-    display: flex;
-    width: 100%;
-`

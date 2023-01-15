@@ -1,24 +1,36 @@
+import { Container, Title, MainBG, Text, GitHub, Linkedin, WhatsApp } from "./styles";
+import ImgCoding from "../../assets/img/Coding _Two Color.svg";
 
-import { Container, TitleContainer, Wrapper, Title, Text, ImgContainer, ImgStyle } from "./styles";
-import Button from "../button";
-import ImgCoding from "../../assets/img/Coding _Two Color.svg"
-
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 const Home = () => {
-    return (
-    <Wrapper>
-        <Container>
-            <ImgContainer>
-                <img src={ImgCoding} alt={'imgManCodding'}/>
-            </ImgContainer>
-            <TitleContainer>
-                <Text>Olá, Sou Jumael </Text>
-                <Title> Densevolvedor Front-End</Title>
-                <Text>Bem Vindo(a) ao meu site pessoal! <br/> Criei esse Projeto como forma de estudo. Trata-se de uma LandPage Com uma apresentação visual sobre mim, contendo alguns dos meus projetos e meus contatos (caso você se interesse pelos meus serviços). Utilizei para a criação desta Pagina a Biblioteca ReactJS juntamente com Styled-Components. Clique no Botão Abaixo para ver o Repositorio contendo o Codigo Fonte do Site no meu GitHub.</Text>
-                <Button href={'https://github.com/jumaelmartins/portfolio.git'} value={'Repositorio'}></Button>   
-            </TitleContainer>   
-        </Container>
-    </Wrapper>)
-}
+  return (
+    <MainBG>
+      <Container>
+        <span>
+          <img src={ImgCoding} alt={"imgManCodding"} />
+        </span>
+        <Title>
+          <Text>Olá, Sou Jumael </Text>
+          <h2> Densevolvedor Front-End</h2>
+          <Text>Bem Vindo(a) ao meu site pessoal!</Text>
+          <div>
+            <GitHub href="https://github.com/jumaelmartins" target={'_blank'}>
+              <GitHubIcon color="inherit" fontSize="inherit" />
+            </GitHub>
+            <Linkedin href="https://www.linkedin.com/in/jumael-martins/" target={'_blank'}>
+              <LinkedInIcon color="inherit" fontSize="inherit" />
+            </Linkedin>
+            <WhatsApp href="https://wa.me/71996040206" target={'_blank'}>
+              <WhatsAppIcon color="inherit" fontSize="inherit" />
+            </WhatsApp>
+          </div>
+        </Title>
+      </Container>
+    </MainBG>
+  );
+};
 
 export default Home;

@@ -2,14 +2,16 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  border: 3px solid green;
 
+  max-width: 120rem;
+  margin: 0 auto;
   align-items: center;
   text-align: center;
   padding-top: 5rem;
-
-  box-sizing: border-box;
 `;
 
 export const AboutContainer = styled.div`
@@ -160,3 +162,40 @@ export const Sobre = styled.article`
     flex-direction: row;
   }
 `;
+
+
+
+
+
+
+
+
+
+
+
+export const Dashboard = styled.div `
+margin-top: 8rem;
+max-width: 100%;
+width: 40rem;
+height: 40rem;
+background-color: white;
+display: flex;
+flex-direction: column;
+
+div{
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  align-items: center;
+  justify-content: center;
+  margin: .5rem;
+  background-color: gray;
+}
+`
+
+export const Row = styled.section`
+display: flex;
+height: 100%;
+margin: .5rem;
+`

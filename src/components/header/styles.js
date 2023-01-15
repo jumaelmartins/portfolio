@@ -1,45 +1,53 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
-    background-color: #161616;
-    width: 100%;
-    height: 3.5rem;
-    
-    display: flex;
-    box-sizing: border-box;
-    justify-content: space-between;
-   // grid-template-columns: 1fr 3fr;
-    padding: 0 .5rem;
-    box-shadow: 0 3px 3px 3px black;
-    @media screen and (min-width: 668px) {
-        padding: 0 1rem; 
-    }
+  background-color: #161616;
+  width: 100%;
+  height: 5.5rem;
+  position: fixed;
+  z-index: 3;
 
-    @media screen and (min-width: 1024px) {
-        padding: 0 5rem; 
-    }
-    
-`
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
 
-export const TitleContainer = styled.div`
-    text-align: center;
-    display: flex;
-    white-space: nowrap;
+  box-shadow: 0 0 .1rem .2rem #2a2a2a;
+
+
+  div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
     align-items: center;
-
-    font-size: .85rem;
-    font-weight: 700;
-    justify-content: center;
-    color: cyan;
-`
-
-
-export const Wrapper = styled.section`
-    display: flex;
-    width: 100%;
-    flex-direction: column;
     
-    position: fixed;
-    flex: 0 1;
-    box-sizing: border-box;
-`
+    width: 100%;
+    max-width: 120rem;
+    height: 100%;
+
+    padding: 0 3rem;
+    @media screen and (max-width: 768px) {
+        display: flex;
+    }
+  }
+
+  span {
+    display: none;
+    align-items: center;
+    color: cyan;
+    margin-right: 1rem;
+    cursor: pointer;
+
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+    }
+  }
+
+`;
+
+export const Title = styled.h1`
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: cyan;
+`;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.footer`
     background-color: #161616;
     width: 100%;
-    height: 4rem;
+    height: 6rem;
     display: flex;
     
 
@@ -11,14 +11,6 @@ export const Container = styled.footer`
     justify-content: center;
     align-items: center;
 
-    ::after {
-        content:'';
-        top: 3px;
-        width: 100%;
-        background-color: cyan;
-        height: 2px;
-        position: absolute;
-    }
 
     P {
         color: white;

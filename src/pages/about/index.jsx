@@ -8,8 +8,8 @@ import { Container } from "./styles";
 
 const AboutPage = () => {
   return (<Container>
-      <About/>
       <Header/>
+      <About/>
       <Footer/>
 </Container>)
 };
