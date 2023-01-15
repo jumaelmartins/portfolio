@@ -15,26 +15,21 @@ export const Container = styled.div`
 `;
 
 export const AboutContainer = styled.div`
-  width: 95%;
-  display: flex;
-  flex-direction: column;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  width:100%;
   align-items: center;
-
-  margin-top: 10px;
-
-  @media screen and (min-width: 668px) {
-    text-align: left;
-    margin-top: 32px;
-  }
+  border: 3px solid yellow;
 `;
 export const Title = styled.h1`
+
+  margin-top: 6rem;
   font-size: 1.7rem;
-  display: flex;
   color: cyan;
-  margin: 1rem;
   border: 1px solid cyan;
-  width: 95%;
-  justify-content: center;
+  width: 100%;
 
   @media screen and (min-width: 393px) {
     font-size: 3rem;
@@ -46,41 +41,16 @@ export const Title = styled.h1`
 `;
 
 export const Text = styled.p`
-  font-size: 0.85rem;
-  display: flex;
-  margin: 0.3rem;
+  font-size: 2rem;
+  margin: 0 auto;
   font-weight: normal;
-  
-  box-sizing: border-box;
-  line-height: 1.7rem;
-  
+  line-height: 3rem;
 
-  @media screen and (min-width: 393px) {
-    font-size: 0.9rem;
-  }
-
-  @media screen and (min-width: 668px) {
-    line-height: 2rem;
-    margin-left: 25px;
-    width: 500px;
-    
-  }
-
-  @media screen and (min-width: 1024px) {
-    line-height: 2.5rem;
-    font-size: 1.15rem;
-    width: 720px;
-  }
-
-  @media screen and (min-width: 1440px) {
-    width: 1024px;
-  }
+  b {
+    color: cyan;
+  }  
 `;
 
-export const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
 export const SubTitleContainer = styled.div`
   @media screen and (min-width: 668px) {
     justify-content: start;
@@ -129,23 +99,22 @@ export const SideContainer = styled.div`
 export const ImgStyle = styled.img`
   display: flex;
   align-items: center;
-  width: 180px;
+  width: 18rem;
 
-  height: 200px;
+  height: 18rem;
   border-radius: 50%;
   border: 5px solid cyan;
 
-  flex-shrink: 1;
-  box-sizing: border-box;
-
+  margin: 0 auto;
+  max-width: 100%;
   @media screen and (min-width: 450px) {
-    width: 260px;
-    height: 280px;
+    width: 26rem;
+    height: 26rem;
   }
 
   @media screen and (min-width: 842px) {
-    width: 380px;
-    height: 380px;
+    width: 32rem;
+    height: 32rem;
   }
 `;
 
@@ -199,3 +168,10 @@ display: flex;
 height: 100%;
 margin: .5rem;
 `
+
+export const SecondPage = styled.div`
+  height: 100vh;
+  width:100%;
+  background-color: white;
+`
+

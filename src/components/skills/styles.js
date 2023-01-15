@@ -1,22 +1,7 @@
 import styled from "styled-components";
 import { css } from "styled-components";
 export const Container = styled.div`
-  background-color: white;
-  color: #1c1c1c;
-  width: 100%;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-
-  padding-top: 5rem;
-  padding-bottom: 10rem;
-  box-sizing: border-box;
-
-  @media screen and (min-height: 916px) {
-    height: 100vh;
-  }
 `;
 
 export const ProjectContainer = styled.div`
@@ -54,11 +39,11 @@ export const ProjectContainer = styled.div`
 `;
 
 export const Svglogo = styled.svg`
-  width: 80px;
-  height: 80px;
+  width: 64px;
+  height: 64px;
   fill: black;
 
-  margin: 32px;
+  margin: 1rem;
   ${({ variant }) =>
     variant === "html" &&
     css`
@@ -111,24 +96,6 @@ export const Svglogo = styled.svg`
         fill: darkgray;
       }
     `}
-
-  @media screen and (min-width: 392px) {
-    width: 100px;
-    height: 100px;
-  }
-
-  @media screen and (min-width: 668px) {
-    width: 128px;
-    height: 128px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    margin: 32px 128px;
-  }
-  cursor: pointer;
-
-  flex: 0 2;
-  box-sizing: border-box;
 `;
 
 export const Wrapper = styled.div`
@@ -164,7 +131,12 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
 
-  box-sizing: border-box;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 `;
 export const Row = styled.div`
   display: flex;
@@ -173,16 +145,11 @@ export const Row = styled.div`
 
   height: 100%;
   align-items: center;
-
-  box-sizing: border-box;
-  @media screen and (min-width: 668px) {
-    flex-direction: row;
-  }
 `;
 
 export const Progress = styled.div`
-  width: 180px;
-  height: 10px;
+  width: 10rem;
+  height: 1rem;
   background-color: lightgray;
   border-radius: 5px;
   position: relative;
@@ -193,7 +160,7 @@ export const Progress = styled.div`
     top: 0;
     left: 0;
     width: ${({ percentual }) => percentual}%;
-    height: 10px;
+    height: 1rem;
     border-radius: 5px;
     background-color: cyan;
     animation: skill 5s ease-in-out infinite;
