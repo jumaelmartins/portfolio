@@ -1,5 +1,4 @@
 import AboutCard from "../aboutCard";
-import Footer from "../footer";
 import {
   Container,
   AboutContainer,
@@ -8,7 +7,6 @@ import {
   ImgStyle,
 } from "./styles";
 import { MainBG } from "../home/styles";
-import WebIcon from "@mui/icons-material/Web";
 import Photo from "../../assets/img/photo.png";
 const About = ({ value }) => {
   return (
@@ -28,7 +26,6 @@ const About = ({ value }) => {
           </Text>
         </AboutContainer>
       </Container>
-      <AboutCard/>
     </MainBG>
   );
 };

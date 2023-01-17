@@ -4,6 +4,7 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   height: 100vh;
+  max-width: 100%;
 
   flex-direction: column;
   align-items: center;
@@ -18,16 +19,20 @@ export const Container = styled.div`
     max-width: 120rem;
   }
 
+
   span {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    max-width: 100%;
     margin: 7rem auto;
     width: 256px;
     height: 256px;
 
+
+
     img {
+      max-width: 100%;
       width: 256px;
       height: 256px;
     }
@@ -44,6 +49,7 @@ export const Container = styled.div`
 
     @media screen and (min-width: 768px) {
       margin: 0 auto;
+
       img {
         width: 380px;
         height: 380px;
@@ -51,6 +57,8 @@ export const Container = styled.div`
     }
 
     @media screen and (min-width: 1440px) {
+      
+
       img {
         width: 512px;
         height: 512px;
@@ -62,12 +70,13 @@ export const Container = styled.div`
 export const Title = styled.section`
   width: 256px;
   margin: 3.5rem auto;
-
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   div {
+    max-width: 100%;
     width: 14rem;
     justify-content: space-around;
     display: flex;
@@ -76,6 +85,7 @@ export const Title = styled.section`
   }
 
   h2 {
+    max-width: 100%;
     font-size: 2rem;
     display: flex;
     color: cyan;
@@ -93,6 +103,7 @@ export const Title = styled.section`
 
   @media screen and (min-width: 768px) {
     margin: 0 auto;
+    width: 450px;
   }
 
   @keyframes typewriter {
@@ -105,7 +116,7 @@ export const Title = styled.section`
   }
   @keyframes blink {
     from {
-      border-color: black;
+      border-color: white;
     }
     to {
       border-color: transparent;
@@ -139,10 +150,35 @@ export const MainBG = styled.div`
   width: 100%;
   height: 100vh;
 
-  background: linear-gradient(#d8e7eb, #ffffff);
+  color: white;
+  background: linear-gradient(to right, #04080c, #051b3d, #030510);
+  background-size: 400% 400%;
+
+  animation: gradienteBg 15s ease-in-out infinite;
+
+  @keyframes gradienteBg {
+    0% {
+      background-position: 15% 0%;
+    }
+
+    25% {
+      background-position: 45% 0%;
+    }
+    50% {
+      background-position: 100% 0%;
+    }
+
+    75% {
+      background-position: 65% 0%;
+    }
+    100% {
+      background-position: 25% 0%;
+    }
+  }
 `;
 
 export const GitHub = styled.a`
+  color: #161616;
   text-decoration: none;
 
   :visited {
@@ -157,6 +193,7 @@ export const GitHub = styled.a`
 `;
 
 export const Linkedin = styled.a`
+  color: #161616;
   text-decoration: none;
 
   :visited {
@@ -172,6 +209,7 @@ export const Linkedin = styled.a`
 
 export const WhatsApp = styled.a`
   text-decoration: none;
+  color: #161616;
 
   :visited {
     color: inherit;
