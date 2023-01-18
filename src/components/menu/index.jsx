@@ -12,9 +12,6 @@ const Menu = ({ variant = "desktop", active = true}) => {
       <MenuItems href="\projects" variant={variant}>
         Projects
       </MenuItems>
-      <MenuItems href="\skills" variant={variant}>
-        Skills
-      </MenuItems>
       <MenuItems href="\contact" variant={variant}>
         Contact Me
       </MenuItems>

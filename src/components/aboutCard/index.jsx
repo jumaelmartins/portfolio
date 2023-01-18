@@ -4,8 +4,10 @@ import {
   Dashboard,
   Row,
   SecondPage,
+  Title,
 } from "./styles";
 
+import { MainBG } from "../home/styles";
 
 import Skills from "../skills";
 
@@ -13,44 +15,48 @@ const AboutCard = ({ title, leftIcon, text }) => {
   return (
     <SecondPage>
       <Container>
+        <Title>RESUME</Title>
         <AboutContainer>
-        <div>
-            <h2>lorem </h2>
+          <div>
+            <h2>EDUCATION</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
-              iure, laboriosam nam omnis in veritatis quaerat eius ipsam vero
-              sint autem excepturi magnam quam? Accusantium possimus saepe
-              repellat amet voluptas?
+              Estacio - Bacharelado, Ciências da Computação - 10/2022 á 03/2025
             </p>
-            <br />
+            <p>
+              Estacio - Tecnologo, Redes de Computadores - 01/2019 á 09/2022
+            </p>
           </div>
           <Dashboard>
             <Row>
               <div>
-                <p>+10</p>
-                <p>Projetos</p>
+                <p>
+                  <span>2 </span> Formações
+                </p>
               </div>
               <div>
-                <p>+10</p>
-                <p>Projetos</p>
+                <p>
+                  <span>+1000 </span> Horas de Estudo
+                </p>
               </div>
             </Row>
             <Row>
               <div>
-                <p>+10</p>
-                <p>Projetos</p>
+                <p>
+                  <span>+100 </span> Cursos
+                </p>
               </div>
               <div>
-                <p>+10</p>
-                <p>Projetos</p>
+                <p>
+                  <span>+10 </span> Projetos
+                </p>
               </div>
             </Row>
           </Dashboard>
         </AboutContainer>
       </Container>
-      <Container>
-        <Skills></Skills>
-      </Container>
+      <MainBG>
+        <Skills/>
+      </MainBG>
     </SecondPage>
   );
 };

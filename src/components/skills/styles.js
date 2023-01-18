@@ -1,47 +1,41 @@
 import styled from "styled-components";
 import { css } from "styled-components";
+
 export const Container = styled.div`
-
-`;
-
-export const ProjectContainer = styled.div`
+  width: 100%;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
+  padding: 0 1.5rem;
+
+  color: black;
+  max-width: 120rem;
+  margin: 0 auto;
   align-items: center;
   text-align: center;
+  padding-top: 5rem;
 
-  justify-content: center;
-
-  @keyframes up {
-    0% {
-      transform: translateY(0px);
-    }
-    33% {
-      transform: translateY(10px);
-    }
-    66% {
-      transform: translateY(3px);
-    }
-    100% {
-      transform: translateY(0px);
-    }
-  }
-
-  img {
-    margin: 5rem;
-    width: 128px;
-    height: 128px;
-
-    &:hover {
-      cursor: pointer;
-      animation: up 3s ease-in-out infinite;
+  section {
+    margin: 1.5rem 0 0;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    align-items: center;
+  
+    @media screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 40rem;
     }
   }
 `;
-
 export const Svglogo = styled.svg`
-  width: 64px;
-  height: 64px;
-  fill: black;
+  width: 48px;
+  height: 48px;
+  fill: white;
+  cursor: pointer;
+  max-width: 100%;
+  
 
   margin: 1rem;
   ${({ variant }) =>
@@ -52,7 +46,7 @@ export const Svglogo = styled.svg`
       }
     `}
 
-    ${({ variant }) =>
+  ${({ variant }) =>
     variant === "css" &&
     css`
       &:hover {
@@ -71,14 +65,16 @@ export const Svglogo = styled.svg`
     ${({ variant }) =>
     variant === "react" &&
     css`
-        transition: 1.5s;
+      transition: 1.5s;
       &:hover {
         fill: lightblue;
-        animation: spin 4.5s .1s linear infinite;
+        animation: spin 4.5s 0.1s linear infinite;
         @keyframes spin {
-            to{transform:rotate(360deg)}
+          to {
+            transform: rotate(360deg);
+          }
         }
-    }
+      }
     `}
 
     ${({ variant }) =>
@@ -98,45 +94,38 @@ export const Svglogo = styled.svg`
     `}
 `;
 
-export const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-
-  @media screen and (min-width: 668px) {
-    flex-direction: row;
-  }
-`;
-
 export const Title = styled.h1`
-  font-size: 1.7rem;
-  display: flex;
+  margin: 6rem 0;
+  font-size: 2rem;
   color: cyan;
-  margin: 1rem;
   border: 1px solid cyan;
-  width: 95%;
-  justify-content: center;
+  width: 80%;
 
   @media screen and (min-width: 393px) {
     font-size: 3rem;
   }
 
-  @media screen and (min-width: 842px) {
+  @media screen and (min-width: 768px) {
     font-size: 3.5rem;
+    width: 120rem;
+    max-width: 100%;
   }
 `;
 
 export const Column = styled.div`
   align-items: center;
   display: flex;
-  flex-direction: column;
-
+  
+  flex-flow: column;
+  max-height: 80%;
+  max-width: 80%; 
+  
+  
   div {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-
 `;
 export const Row = styled.div`
   display: flex;

@@ -148,7 +148,12 @@ export const MainBG = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  
+  @media screen and (max-width: 768px) {
+    height: 100vh;  
+  }
+
+  
 
   color: white;
   background: linear-gradient(to right, #04080c, #051b3d, #030510);

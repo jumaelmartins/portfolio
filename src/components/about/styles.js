@@ -15,7 +15,7 @@ export const Container = styled.div`
 `;
 
 export const AboutContainer = styled.div`
-  margin: 3rem 0;
+  margin: 1.5rem 0 0;
   display: flex;
   flex-flow: column;
   width: 100%;
@@ -50,7 +50,14 @@ export const Text = styled.p`
   margin: 1.5rem auto;
   font-weight: normal;
   line-height: 3rem;
+  max-width: 100%;
 
+  p {
+    max-width: 100%;
+  
+  }
+
+  padding: 2rem;
   width: 80%;
 
   @media screen and (min-width: 393px) {
@@ -62,6 +69,7 @@ export const Text = styled.p`
     line-height: 3.9rem;
     margin: 0 auto;
     width: auto;
+    max-width: 100%
   }
 
   b {
