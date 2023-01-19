@@ -177,7 +177,7 @@ export const MainBG = styled.div`
 `;
 
 export const GitHub = styled.a`
-  color: #161616;
+  color: white;
   text-decoration: none;
 
   :visited {
@@ -192,7 +192,7 @@ export const GitHub = styled.a`
 `;
 
 export const Linkedin = styled.a`
-  color: #161616;
+  color: white;
   text-decoration: none;
 
   :visited {
@@ -208,7 +208,7 @@ export const Linkedin = styled.a`
 
 export const WhatsApp = styled.a`
   text-decoration: none;
-  color: #161616;
+  color: white;
 
   :visited {
     color: inherit;
