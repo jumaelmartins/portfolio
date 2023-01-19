@@ -1,14 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
 
   padding: 1.5rem;
   max-width: 120rem;
   margin: 0 auto;
+
   align-items: center;
   text-align: center;
   padding-top: 5rem;
@@ -17,7 +16,7 @@ export const Container = styled.div`
 export const AboutContainer = styled.div`
   margin: 1.5rem 0 0;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   width: 100%;
   align-items: center;
 
@@ -31,8 +30,10 @@ export const Title = styled.h1`
   margin: 6rem 0;
   font-size: 2rem;
   color: cyan;
+
   border: 1px solid cyan;
   width: 80%;
+  max-width: 100%;
 
   @media screen and (min-width: 393px) {
     font-size: 3rem;
@@ -41,7 +42,6 @@ export const Title = styled.h1`
   @media screen and (min-width: 768px) {
     font-size: 3.5rem;
     width: 120rem;
-    max-width: 100%;
   }
 `;
 
@@ -49,12 +49,14 @@ export const Text = styled.p`
   font-size: 1rem;
   margin: 1.5rem auto;
   font-weight: normal;
+  max-width: 100%;
+
   line-height: 3rem;
   max-width: 100%;
+  text-align: left;
 
   p {
     max-width: 100%;
-  
   }
 
   padding: 2rem;
@@ -65,11 +67,10 @@ export const Text = styled.p`
   }
 
   @media screen and (min-width: 768px) {
-    font-size: 2rem;
-    line-height: 3.9rem;
+    font-size: 1.8rem;
+    line-height: 4rem;
     margin: 0 auto;
     width: auto;
-    max-width: 100%
   }
 
   b {

@@ -19,7 +19,6 @@ export const Container = styled.div`
     max-width: 120rem;
   }
 
-
   span {
     display: flex;
     align-items: center;
@@ -28,8 +27,6 @@ export const Container = styled.div`
     margin: 7rem auto;
     width: 256px;
     height: 256px;
-
-
 
     img {
       max-width: 100%;
@@ -49,6 +46,8 @@ export const Container = styled.div`
 
     @media screen and (min-width: 768px) {
       margin: 0 auto;
+      width: 380px;
+      height: 380px;
 
       img {
         width: 380px;
@@ -57,7 +56,8 @@ export const Container = styled.div`
     }
 
     @media screen and (min-width: 1440px) {
-      
+      width: 512px;
+      height: 512px;
 
       img {
         width: 512px;
@@ -148,12 +148,6 @@ export const MainBG = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  
-  @media screen and (max-width: 768px) {
-    height: 100vh;  
-  }
-
-  
 
   color: white;
   background: linear-gradient(to right, #04080c, #051b3d, #030510);

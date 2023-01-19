@@ -7,10 +7,12 @@ import Pokedex from "../../assets/img/pokedex.png"
 import Button from '../button';
 import LandinPage from '../../assets/img/landinPage.png'
 
+import { MainBG } from '../home/styles';
+
 
 const Projects = () => {
     return (
-   <Wrapper>
+   <MainBG>
         <Container>
             <Title>PROJECTS</Title>
             <ProjectContainer>
@@ -29,7 +31,7 @@ const Projects = () => {
             </ProjectContainer>
             <Button variant="secondary"value={'load more'}></Button>
         </Container>
-    </Wrapper>
+    </MainBG>
 )
 }
 

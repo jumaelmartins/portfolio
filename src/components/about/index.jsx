@@ -15,15 +15,14 @@ const About = ({ value }) => {
               Olá, me Chamo <b>Jumael Martins</b>, Desenvolvedor Front-End
             </p>
             <p>
-            sou um apaixonado por Tecnologia, criativo e bastante curioso.
-            iniciei meus estudos em TI pela área de Infra, pelo fato de eu ser
-            um entusiasta de Hardware "pelo menos eu me considerava assim rs",
-            Porém ao mergulha na área de Programação tive um vislumbre das
-            infinitas possibilidades que me aguardavam, isso fez com que eu
-            sentisse que poderia realizar qualquer coisa, com isso veio uma
-            imensurável sede de conhecimento. Atualmente estou com meus estudos
-            voltados para área de desenvolvimento de softwares fiz alguns cursos
-            focados em Front-End (Html, Css, Javascript, React).
+              sou um apaixonado por Tecnologia, criativo e bastante curioso.
+              Comecei a estudar programação por volta de Maio/2022 fiz alguns
+              cursos focados em Front-End (Html, Css, Javascript, React). Após
+              meses de muitas aulas em vídeo, leitura de documentação e prática,
+              bugs e mais bugs 😅, Finalmente já estou me sentindo mais
+              confiante no JS, então em Jan/2023 iniciei os estudos no Back End.
+              Estou estudando Node, Express, Java e MongoDB.  Meus Hobbies são (assistir
+              animes, musculação, atividade aeróbica e estudar).
             </p>
           </Text>
         </AboutContainer>

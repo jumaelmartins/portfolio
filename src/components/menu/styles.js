@@ -22,7 +22,9 @@ export const Container = styled.nav`
     css`
       @media screen and (max-width: 768px) {
         background-color: gray;
-        opacity: 0.4;
+        opacity: .85;
+
+
         z-index: 2;
         top: 5.5rem;
         left: 0;
@@ -57,6 +59,7 @@ export const Container = styled.nav`
     `}
 `;
 export const MenuItems = styled.a`
+  z-index: 3;
   ${({ variant }) =>
     variant === "mobile" &&
     css`
@@ -69,8 +72,6 @@ export const MenuItems = styled.a`
 
         &:hover {
           transition: 0.2s;
-          background-color: cyan;
-          text-align: center;
           width: 100%;
           color: white;
         }

@@ -3,14 +3,13 @@ import { css } from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 0 1.5rem;
 
   color: black;
   max-width: 120rem;
-  margin: 0 auto;
+  margin: 3rem auto;
   align-items: center;
   text-align: center;
   padding-top: 5rem;
@@ -117,7 +116,6 @@ export const Column = styled.div`
   display: flex;
   
   flex-flow: column;
-  max-height: 80%;
   max-width: 80%; 
   
   
@@ -152,15 +150,5 @@ export const Progress = styled.div`
     height: 1rem;
     border-radius: 5px;
     background-color: cyan;
-    animation: skill 5s ease-in-out infinite;
-  }
-
-  @keyframes skill {
-    0% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 1;
-    }
   }
 `;

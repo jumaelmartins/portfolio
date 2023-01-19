@@ -1,234 +1,201 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    
-    background-color: #f5f5ff;
-    color: #1C1C1C;
-    width: 100%;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-top: 5rem;
+  color: #1c1c1c;
+  width: 100%;
 
-    padding-bottom: 10rem;
-    
-   
+  padding: 1.5rem;
+  max-width: 120rem;
+  margin: 3rem auto;
 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 5rem;
 
-    
-    @media screen and (min-height: 916px){
-        height: 100vh;
-    } 
-`
+  @media screen and (min-width: 768px) {
+    height: 100vh;
+  }
+`;
 
 export const ProjectContainer = styled.div`
-    display: flex;
-    align-items: center;
-    text-align: center;
-    
-    
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
 
-   
-    img {
-        margin: 5rem;
-        width: 128px;
-        height: 128px;  
-    }
-`
+  justify-content: center;
 
-export const Wrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    
-   
-    @media screen and (min-width: 668px) {
-        flex-direction: row;
-    }
-`
+  img {
+    margin: 5rem;
+    width: 128px;
+    height: 128px;
+  }
+`;
 
 export const Title = styled.h1`
-    font-size: 1.7rem;
-    display:flex;
-    color: cyan;
-    margin: 1rem;
-    border: 1PX solid cyan;
-    width: 95%;
-    justify-content: center;
+  margin: 6rem auto;
+  font-size: 2rem;
+  color: cyan;
+  max-width: 100%;
+  width: 80%;
 
-    @media screen and (min-width: 393px){
-        font-size: 3rem;
-    }
+  border: 1px solid cyan;
+  @media screen and (min-width: 393px) {
+    font-size: 3rem;
+  }
 
-    @media screen and (min-width: 842px){
-        font-size: 3.5rem;
-    
-    }
-`
+  @media screen and (min-width: 768px) {
+    font-size: 3.5rem;
+    width: 120rem;
+  }
+`;
 
 export const Column = styled.div`
-  
-    display: flex;
-    flex-direction: column;
-
-`
+  display: flex;
+  flex-direction: column;
+`;
 export const Row = styled.div`
-  
-    display: flex;
+  display: flex;
 
-    height: 100%;
-    align-items: center;
-    
-    @media screen and (min-width: 668px){
-        
-    }
-    
-`
+  height: 100%;
+  align-items: center;
+
+  @media screen and (min-width: 668px) {
+  }
+`;
 
 export const Git = styled.div`
-    
-    margin: 16px;
-    font-size: 64px;
-    display: flex;
+  margin: 16px;
+  font-size: 64px;
+  display: flex;
 
-    height: 100%;
-    align-items: center;
-    color: darkgray;
+  height: 100%;
+  align-items: center;
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  a {
+    padding: 16px;
+    margin: 16px;
+    color: #161616;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:visited {
+      color: #161616;
+      color: white;
+    }
 
     &:hover {
-        cursor: pointer;
+      background-color: cyan;
+      border-radius: 5px;
+      color: white;
     }
-    
-
-    a {
-        
-        padding: 16px;
-        margin: 16px;
-        color: #161616;
-        font-size: 20px;
-        font-weight: bold; 
-        text-decoration: none;
-
-        &:visited {
-        color: #161616;
-        }
-
-        &:hover {
-            border: solid 1px cyan;
-            border-radius: 5px;
-
-        }
-    }
-    @media screen and (min-width: 668px){
-        
-    }
-`
+  }
+  @media screen and (min-width: 668px) {
+  }
+`;
 export const Linkedin = styled.div`
-  
+  margin: 16px;
+  font-size: 64px;
+  display: flex;
+
+  height: 100%;
+  align-items: center;
+  color: royalblue;
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  a {
+    padding: 16px;
     margin: 16px;
-    font-size: 64px;
-    display: flex;
-
-    height: 100%;
-    align-items: center;
-    color: royalblue;
-
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
     &:hover {
-        cursor: pointer;
+      background-color: cyan;
+      border-radius: 5px;
+      color: white;
     }
-    
-
-    a {
-        padding: 16px;
-        margin: 16px;
-        color: #161616;
-        font-size: 20px;
-        font-weight: bold; 
-        text-decoration: none;
-        &:hover {
-            border: solid 1px cyan;
-            border-radius: 5px;
-
-        }
-        &:visited {
-        color: #161616;
-        }
+    &:visited {
+      color: white;
     }
-    @media screen and (min-width: 668px){
-        
-    }
-`
+  }
+  @media screen and (min-width: 668px) {
+  }
+`;
 
 export const Email = styled.div`
-    
+  margin: 16px;
+  font-size: 64px;
+  display: flex;
 
+  height: 100%;
+  align-items: center;
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  a {
+    padding: 16px;
     margin: 16px;
-    font-size: 64px;
-    display: flex;
-
-    height: 100%;
-    align-items: center;
-    color: orangered;
-
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
     &:hover {
-        cursor: pointer;
+      background-color: cyan;
+      border-radius: 5px;
+      color: white;
     }
-    
-    a {
-        padding: 16px;
-        margin: 16px;
-        color: #161616;
-        font-size: 20px;
-        font-weight: bold; 
-        text-decoration: none;
-        &:hover {
-            border: solid 1px cyan;
-            border-radius: 5px;
-
-        }
-        &:visited {
-        color: #161616;
-        }
+    &:visited {
+      color: white;
     }
-    @media screen and (min-width: 668px){
-        
-    }
-`
+  }
+  @media screen and (min-width: 668px) {
+  }
+`;
 
 export const WhatsUp = styled.div`
-  
+  margin: 16px;
+  font-size: 64px;
+  display: flex;
+
+  height: 100%;
+  align-items: center;
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  a {
+    white-space: nowrap;
+    padding: 16px;
     margin: 16px;
-    font-size: 64px;
-    display: flex;
-
-    height: 100%;
-    align-items: center;
-    color: yellowgreen;
-
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
     &:hover {
-        cursor: pointer;
+      background-color: cyan;
+      border-radius: 5px;
+      color: white;
     }
-
-    a {
-        white-space: nowrap;
-        padding: 16px;
-        margin: 16px;
-        color: #161616;
-        font-size: 20px;
-        font-weight: bold; 
-        text-decoration: none;
-        &:hover {
-            border: solid 1px cyan;
-            border-radius: 5px;
-
-        }
-        &:visited {
-        color: #161616;
-        }
+    &:visited {
+      color: white;
     }
-    @media screen and (min-width: 668px){
-        
-    }
-`
+  }
+  @media screen and (min-width: 668px) {
+  }
+`;

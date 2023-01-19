@@ -5,6 +5,12 @@ export const Dashboard = styled.div`
   width: 40rem;
   height: 40rem;
   border-radius: 2.2rem;
+
+  p {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    word-break: break-all;
+  }
   
   justify-self: center;
   background-color: #a1a8b3;
@@ -16,11 +22,31 @@ export const Dashboard = styled.div`
     flex-wrap: wrap;
     width: 20rem;
     max-width: 100%;
+    
+
+    padding: .5rem;
     border-radius: 2.2rem;
     align-items: center;
     justify-content: center;
     margin: 0.8rem;
     background-color: white;
+  }
+
+  @media screen and (max-width: 560px) {
+    width: 25rem;
+    height: 25rem;
+
+    div {
+      width: 10rem;
+      height: 10rem;
+    }
+
+    p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    word-break: break-all;
+  }
+
   }
 `;
 
@@ -31,27 +57,24 @@ export const Row = styled.section`
 `;
 
 export const SecondPage = styled.div`
-  height: 100vh;
   width: 100%;
   background-color: white;
 `;
 
 export const Container = styled.div`
   width: 100%;
-  height: 150%;
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
 
   color: black;
   max-width: 120rem;
-  margin: 0 auto;
+  margin: 3rem auto;
   align-items: center;
   text-align: center;
   padding-top: 5rem;
 
   @media screen and (min-width: 768px) {
-    height: 100vh;
   }
 `;
 
