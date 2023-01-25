@@ -10,6 +10,7 @@ const AboutPage = () => {
   return (<Container>
       <Header/>
       <About/>
+      <Footer/>
 </Container>)
 };
 

@@ -9,7 +9,18 @@ export const Dashboard = styled.div`
   p {
     font-size: 1.5rem;
     line-height: 1.5rem;
+    text-align: center;
     word-break: break-all;
+
+    
+  @media screen and (min-width: 393px) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.7rem;
+    line-height: 4rem;
+  }
   }
   
   justify-self: center;
@@ -54,6 +65,7 @@ export const Row = styled.section`
   display: flex;
   height: 100%;
   margin: 0.5rem;
+  
 `;
 
 export const SecondPage = styled.div`
@@ -90,11 +102,37 @@ export const AboutContainer = styled.div`
     list-style: none;
   }
 
+  h2 {
+    font-size: 2rem;
+  }
+
   div {
     max-width: 80%;
     line-height: 6rem;
     font-size: 1.5rem;
     justify-self: center;
+  }
+
+  p {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 3rem;
+    
+  @media screen and (min-width: 393px) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.8rem;
+    line-height: 4rem;
+    margin: 0 auto;
+    width: auto;
+  }
+
+    
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
   }
 
   width: 100%;

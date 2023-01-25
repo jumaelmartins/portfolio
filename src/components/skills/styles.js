@@ -19,12 +19,15 @@ export const Container = styled.div`
     display: flex;
     flex-flow: column;
     width: 100%;
+
+    color: white;
     align-items: center;
-  
+    justify-items: center;
     @media screen and (min-width: 768px) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       height: 40rem;
+      align-items: flex-start;
     }
   }
 `;
@@ -34,7 +37,6 @@ export const Svglogo = styled.svg`
   fill: white;
   cursor: pointer;
   max-width: 100%;
-  
 
   margin: 1rem;
   ${({ variant }) =>
@@ -115,23 +117,31 @@ export const Column = styled.div`
   align-items: center;
   display: flex;
   
+  justify-content: center;
   flex-flow: column;
-  max-width: 80%; 
-  
-  
-  div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  max-width: 100%;
+
+  h2 {
+    font-size: 2rem;
   }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    width: 50rem;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
 `;
 export const Row = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  flex-direction: row;
 
-  height: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem;
   align-items: center;
+  max-width: 100%;
 `;
 
 export const Progress = styled.div`

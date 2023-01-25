@@ -54,6 +54,10 @@ export const Text = styled.p`
   line-height: 3rem;
   max-width: 100%;
   text-align: left;
+  
+  @media screen and (max-width: 768px) {
+      text-align: center;
+    }
 
   p {
     max-width: 100%;

@@ -18,36 +18,52 @@ const AboutCard = ({ title, leftIcon, text }) => {
         <Title>RESUME</Title>
         <AboutContainer>
           <div>
-            <h2>EDUCATION</h2>
-            <p>
-              Estacio - Bacharelado, Ciências da Computação - 10/2022 á 03/2025
-            </p>
-            <p>
-              Estacio - Tecnologo, Redes de Computadores - 01/2019 á 09/2022
-            </p>
+            <section>
+              <h2>PROFILE</h2>
+              <p>
+                Eu sou bastante comprometido, principalmente com meus objetivos,
+                Desde que me interessei na área da programação, estudo
+                diariamente para conseguir a minha primeira oportunidade.
+                Comecei os estudos em mai/2022 desde então venho desenvolvendo
+                diversos projetos para colocar em prática todo o meu
+                conhecimento. Tenho facilidade de aprendizado,
+                boa comunicação e a todo momento busco me aprimorar cada vez
+                mais. Perfil analitico focado em solução de problemas, bastante Hands On. 
+              </p>
+            </section>
+            <section>
+              <h2>EDUCATION</h2>
+              <p>
+                Estacio - Bacharelado, Ciências da Computação - 10/2022 á
+                03/2025
+              </p>
+              <p>
+                Estacio - Tecnologo, Redes de Computadores - 01/2019 á 09/2022
+              </p>
+            </section>
           </div>
           <Dashboard>
             <Row>
               <div>
                 <p>
-                  <span>2 </span> Formações
+                  <span><b>2</b> </span> Formações Academicas.
                 </p>
               </div>
               <div>
                 <p>
-                  <span>+1000 </span> Horas de Estudo
+                  <span><b>+1000</b> </span> Horas de Estudo.
                 </p>
               </div>
             </Row>
             <Row>
               <div>
                 <p>
-                  <span>+100 </span> Cursos
+                  <span><b>+100</b> </span> Cursos Relacionados a Programação.
                 </p>
               </div>
               <div>
                 <p>
-                  <span>+10 </span> Projetos
+                  <span><b>+10</b> </span> Projetos Hospedados no GitHub.
                 </p>
               </div>
             </Row>
@@ -55,7 +71,7 @@ const AboutCard = ({ title, leftIcon, text }) => {
         </AboutContainer>
       </Container>
       <MainBG>
-        <Skills/>
+        <Skills />
       </MainBG>
     </SecondPage>
   );
