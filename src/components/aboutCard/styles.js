@@ -6,23 +6,6 @@ export const Dashboard = styled.div`
   height: 40rem;
   border-radius: 2.2rem;
 
-  p {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    text-align: center;
-    word-break: break-all;
-
-    
-  @media screen and (min-width: 393px) {
-    font-size: 1.5rem;
-  }
-
-  @media screen and (min-width: 768px) {
-    font-size: 1.7rem;
-    line-height: 4rem;
-  }
-  }
-  
   justify-self: center;
   background-color: #a1a8b3;
   display: flex;
@@ -30,34 +13,32 @@ export const Dashboard = styled.div`
 
   div {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 20rem;
     max-width: 100%;
-    
+    border: 3px solid lightgray;
 
-    padding: .5rem;
+    padding: .7rem;
     border-radius: 2.2rem;
-    align-items: center;
-    justify-content: center;
-    margin: 0.8rem;
+    margin: 0.5rem;
     background-color: white;
+
+    p {
+      max-width: 100%;
+      text-align: center;
+      margin: .2rem;
+      overflow: hidden;
+    }
   }
 
   @media screen and (max-width: 560px) {
-    width: 25rem;
-    height: 25rem;
+    width: 30rem;
+    height: 30rem;
 
     div {
-      width: 10rem;
-      height: 10rem;
+      width: 15rem;
+      height: 13rem;
     }
-
-    p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    word-break: break-all;
-  }
-
   }
 `;
 
@@ -65,7 +46,6 @@ export const Row = styled.section`
   display: flex;
   height: 100%;
   margin: 0.5rem;
-  
 `;
 
 export const SecondPage = styled.div`

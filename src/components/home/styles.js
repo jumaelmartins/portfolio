@@ -32,6 +32,15 @@ export const Container = styled.div`
       max-width: 100%;
       width: 256px;
       height: 256px;
+      animation: bounce 3s cubic-bezier(0.165, 0.84, 0.2, 1) forwards;
+
+
+    }
+
+    @keyframes bounce {
+      0% {transform: translateY(-120px)}
+      75%{transform: translateY(20px)}
+      100%{transform: translateY(0px)}
     }
 
     @media screen and (min-width: 320px) {

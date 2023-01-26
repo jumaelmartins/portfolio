@@ -5,13 +5,14 @@ import {
   Row,
   SecondPage,
   Title,
+  p,
 } from "./styles";
 
 import { MainBG } from "../home/styles";
 
 import Skills from "../skills";
 
-const AboutCard = ({ title, leftIcon, text }) => {
+const AboutCard = ({ title, leftIcon, p }) => {
   return (
     <SecondPage>
       <Container>
@@ -26,9 +27,9 @@ const AboutCard = ({ title, leftIcon, text }) => {
                 diariamente para conseguir a minha primeira oportunidade.
                 Comecei os estudos em mai/2022 desde então venho desenvolvendo
                 diversos projetos para colocar em prática todo o meu
-                conhecimento. Tenho facilidade de aprendizado,
-                boa comunicação e a todo momento busco me aprimorar cada vez
-                mais. Perfil analitico focado em solução de problemas, bastante Hands On. 
+                conhecimento. Tenho facilidade de aprendizado, boa comunicação e
+                a todo momento busco me aprimorar cada vez mais. Perfil
+                analitico focado em solução de problemas, bastante Hands On.
               </p>
             </section>
             <section>
@@ -46,25 +47,29 @@ const AboutCard = ({ title, leftIcon, text }) => {
             <Row>
               <div>
                 <p>
-                  <span><b>2</b> </span> Formações Academicas.
+                  <b>2</b>
                 </p>
+                <p>Formações Academicas.</p>
               </div>
               <div>
                 <p>
-                  <span><b>+1000</b> </span> Horas de Estudo.
+                  <b>+1000</b>
                 </p>
+                <p>Horas de Estudo.</p>
               </div>
             </Row>
             <Row>
               <div>
                 <p>
-                  <span><b>+100</b> </span> Cursos Relacionados a Programação.
+                  <b>+100</b>
                 </p>
+                <p>Cursos Relacionados a Programação.</p>
               </div>
               <div>
                 <p>
-                  <span><b>+10</b> </span> Projetos Hospedados no GitHub.
+                  <b>+10</b>
                 </p>
+                <p>Projetos Hospedados no GitHub.</p>
               </div>
             </Row>
           </Dashboard>
