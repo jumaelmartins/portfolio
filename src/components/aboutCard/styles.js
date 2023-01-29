@@ -11,6 +11,8 @@ export const Dashboard = styled.div`
   display: flex;
   flex-direction: column;
 
+  animation: slide linear 1s;
+
   div {
     display: flex;
     flex-direction: column;
@@ -22,6 +24,8 @@ export const Dashboard = styled.div`
     border-radius: 2.2rem;
     margin: 0.5rem;
     background-color: white;
+
+    
 
     p {
       max-width: 100%;

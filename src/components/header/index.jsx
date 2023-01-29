@@ -4,7 +4,7 @@ import { Container, Title} from "./styles";
 import { useState } from "react";
 
 
-const Header = ({ select }) => {
+const Header = () => {
 
   const [toggle, setToggle] = useState(false);
   let menuVariant = toggle ? 'mobile' : 'desktop'

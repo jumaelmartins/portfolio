@@ -54,10 +54,21 @@ export const Text = styled.p`
   line-height: 3rem;
   max-width: 100%;
   text-align: left;
-  
-  @media screen and (max-width: 768px) {
-      text-align: center;
+
+  animation: slide linear 1s;
+
+  @keyframes slide {
+    0% {
+      transform: translateX(200px);
     }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 
   p {
     max-width: 100%;
@@ -90,6 +101,17 @@ export const ImgStyle = styled.img`
   height: 18rem;
   border-radius: 50%;
   border: 5px solid cyan;
+
+  animation: slideReverse linear 1s;
+
+  @keyframes slideReverse {
+    0% {
+      transform: translateX(-200px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 
   margin: 0 auto;
   max-width: 100%;

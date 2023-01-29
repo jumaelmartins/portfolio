@@ -1,6 +1,6 @@
 import { Container, MenuItems } from "./styles";
 
-const Menu = ({ variant = "desktop", active = true}) => {
+const Menu = ({ variant = "desktop", active = true, select}) => {
   return (
     <Container menu={active} variant={variant}>
       <MenuItems href="\" variant={variant}>

@@ -1,5 +1,4 @@
 import { CardImg, CardLink, Column, Row, Container, TitleCard, Wrapper } from "./styles";
-import Portifolio from "../../assets/img/portifolio.png"
 
 
 const Card = ( {img, title, run, repo} ) => {

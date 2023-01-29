@@ -8,11 +8,13 @@ import {
   p,
 } from "./styles";
 
+
 import { MainBG } from "../home/styles";
 
 import Skills from "../skills";
 
 const AboutCard = ({ title, leftIcon, p }) => {
+ 
   return (
     <SecondPage>
       <Container>

@@ -22,8 +22,7 @@ export const Container = styled.nav`
     css`
       @media screen and (max-width: 768px) {
         background-color: gray;
-        opacity: .85;
-
+        opacity: 0.85;
 
         z-index: 2;
         top: 5.5rem;
@@ -85,40 +84,35 @@ export const MenuItems = styled.a`
   ${({ variant }) =>
     variant === "desktop" &&
     css`
-       
-        display: none;
-       
-       @media screen and (min-width: 668px){
-       display: flex;
-       text-decoration: none;
-       color: white;
-       margin: 0 0 0 2rem;
-       padding: .3rem;
-       position: relative;
+      display: none;
 
-       &:hover {
-        ::after {
-            content:'';
-            border-bottom: 3px cyan solid;
-            transition: .3s;
-            position: absolute;
-            width: 100%;
-            height: .2rem;
-            background-color: cyan;
-            bottom: -.4rem;
-            left: 0;
+      @media screen and (min-width: 668px) {
+        display: flex;
+        text-decoration: none;
+        color: white;
+        margin: 0 0 0 2rem;
+        padding: 0.3rem;
+        position: relative;
+
+        &:hover {
+          color: cyan;
         }
-            
-       }
-    }
+      }
 
-    ${({ select }) =>
-      select === "true" &&
-      css`
-                border-bottom: 3px cyan solid;
-                transition: .3s;
+      ${({ select }) =>
+        select === "true" &&
+        css`
+          ::after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            background-color: cyan;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            
+          }
         }
         `}
-
-     `}
+    `}
 `;
