@@ -3,20 +3,15 @@ import SearchIcon from "@mui/icons-material/Search";
 import {
   Container,
   ProjectContainer,
-  Wrapper,
   Title,
-  Column,
-  Row,
   SideFilter,
   FlexCollum,
   GridCollumn,
   FilterIcon,
 } from "./styles";
 import Portifolio from "../../assets/img/portifolio.png";
-import EmBreve from "../../assets/img/embreve.png";
 import CalculadoraImc from "../../assets/img/calculadora.imc.png";
 import Pokedex from "../../assets/img/pokedex.png";
-import Button from "../button";
 import LandinPage from "../../assets/img/landinPage.png";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import { useState } from "react";
@@ -41,7 +36,7 @@ const Projects = () => {
             <SideFilter active={toggle}>
               <form action="">
                 <div>
-                  <button>
+                  <button title="SearchButon">
                     <SearchIcon fontSize="large" />
                   </button>
                   <input placeholder="Buscar" type="search" />
@@ -52,32 +47,32 @@ const Projects = () => {
                 <h2>Categoria</h2>
                 <ul>
                   <li>
-                    <input type="checkbox" name="html" id="html" />
-                    <label htmlFor="html">Front-End</label>
+                    <input type="checkbox" name="frontend" id="frontend" />
+                    <label htmlFor="frontend">Front-End</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="html" id="html" />
-                    <label htmlFor="html">Back-End</label>
+                    <input type="checkbox" name="backend" id="backend" />
+                    <label htmlFor="backend">Back-End</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="html" id="html" />
-                    <label htmlFor="html">Fullstack</label>
+                    <input type="checkbox" name="fullstack" id="fullstack" />
+                    <label htmlFor="fullstack">Fullstack</label>
                   </li>
                 </ul>
 
                 <h2>Nivel</h2>
                 <ul>
                   <li>
-                    <input type="checkbox" name="html" id="html" />
-                    <label htmlFor="html">Iniciante</label>
+                    <input type="checkbox" name="starter" id="starter" />
+                    <label htmlFor="starter">Iniciante</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="html" id="html" />
-                    <label htmlFor="html">Intermediario</label>
+                    <input type="checkbox" name="medium" id="medium" />
+                    <label htmlFor="medium">Intermediario</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="html" id="html" />
-                    <label htmlFor="html">Avançado</label>
+                    <input type="checkbox" name="advanced" id="advanced" />
+                    <label htmlFor="advanced">Avançado</label>
                   </li>
                 </ul>
 
@@ -88,24 +83,24 @@ const Projects = () => {
                     <label htmlFor="html">HTML</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="html" id="html" />
-                    <label htmlFor="html">CSS</label>
+                    <input type="checkbox" name="css" id="css" />
+                    <label htmlFor="css">CSS</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="html" id="html" />
-                    <label htmlFor="html">JAVASCRIPT</label>
+                    <input type="checkbox" name="javascript" id="javascript" />
+                    <label htmlFor="javascript">JAVASCRIPT</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="html" id="html" />
-                    <label htmlFor="html">REACTJS</label>
+                    <input type="checkbox" name="react" id="react" />
+                    <label htmlFor="react">REACTJS</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="html" id="html" />
-                    <label htmlFor="html">NODEJS</label>
+                    <input type="checkbox" name="node" id="node" />
+                    <label htmlFor="node">NODEJS</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="html" id="html" />
-                    <label htmlFor="html">JAVA</label>
+                    <input type="checkbox" name="java" id="java" />
+                    <label htmlFor="java">JAVA</label>
                   </li>
                 </ul>
               </section>
@@ -117,12 +112,14 @@ const Projects = () => {
                   <Card
                     title={"MEU PORTIFOLIO"}
                     img={Portifolio}
+                    alt={"Thumb do projeto Portifolio"}
                     run={"https://portfolio-two-wheat-83.vercel.app/"}
                     repo={"https://github.com/jumaelmartins/portfolio"}
                   />
                   <Card
                     title={"CALCULADORA IMC"}
                     img={CalculadoraImc}
+                    alt={"Thumb do projeto Calculadora IMC"}
                     run={"https://jumaelmartins.github.io/Calculadora-IMC/"}
                     repo={
                       "https://github.com/jumaelmartins/Calculadora-IMC.git"
@@ -131,13 +128,14 @@ const Projects = () => {
                   <Card
                     title={"POKEDEX"}
                     img={Pokedex}
+                    alt={"Thumb do projeto Pokedex"}
                     run={"https://jumaelmartins.github.io/Pokedex/"}
                     repo={"https://github.com/jumaelmartins/pokedex.git"}
                   />
                   <Card
                     title={"LAND PAGE"}
                     img={LandinPage}
-                    alt={"Capa do Projeto de Uma Landing Page"}
+                    alt={"Thumb do projeto LandingPage"}
                     run={"https://jumaelmartins.github.io/Landing-Page/"}
                     repo={"https://github.com/jumaelmartins/Landing-Page.git"}
                   />

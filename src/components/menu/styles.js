@@ -1,7 +1,13 @@
 import styled from "styled-components";
 import { css } from "styled-components";
 
-export const Container = styled.nav`
+export const Container = styled.ul`
+  li {
+    list-style: none;
+    display: flex;
+    max-width: 100%;
+  }
+
   @keyframes menu {
     from {
       transform: translateX(280px);

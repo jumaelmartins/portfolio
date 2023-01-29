@@ -15,13 +15,13 @@ const Header = () => {
   
   return (
     <Container>
-      <div>
+      <nav>
         <Title>{'< JUMAEL MARTINS />'}</Title>
         <Menu variant={menuVariant} />
-      </div>
-      <span onClick={handleClick}>
+      </nav>
+      <button title="Toggle button hamburguer menu" onClick={handleClick}>
         <MenuIcon color="inherit" fontSize="large" />
-      </span>
+      </button>
     </Container>
   );
 };

@@ -52,7 +52,7 @@ export const Row = styled.section`
   margin: 0.5rem;
 `;
 
-export const SecondPage = styled.div`
+export const SecondPage = styled.section`
   width: 100%;
   background-color: white;
 `;
@@ -74,7 +74,7 @@ export const Container = styled.div`
   }
 `;
 
-export const AboutContainer = styled.div`
+export const AboutContainer = styled.section`
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
@@ -128,7 +128,7 @@ export const AboutContainer = styled.div`
   }
 `;
 
-export const Title = styled.h1`
+export const Title = styled.h2`
   margin: 6rem 0;
   font-size: 2rem;
   color: cyan;

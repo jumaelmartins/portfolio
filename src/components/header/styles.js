@@ -14,7 +14,7 @@ export const Container = styled.header`
   box-shadow: 0 0 .1rem .2rem #2a2a2a;
 
 
-  div {
+  nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
@@ -30,13 +30,14 @@ export const Container = styled.header`
     }
   }
 
-  span {
+  button {
+    border: none;
+    background: none;
     display: none;
     align-items: center;
     color: cyan;
     margin-right: 1rem;
     cursor: pointer;
-
 
     @media screen and (max-width: 768px) {
       display: flex;

@@ -46,7 +46,7 @@ export const ProjectContainer = styled.div`
   }
 `;
 
-export const Title = styled.h1`
+export const Title = styled.h2`
   margin: 6rem auto;
   font-size: 2rem;
   color: cyan;
@@ -64,30 +64,6 @@ export const Title = styled.h1`
   }
 `;
 
-export const Column = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  justify-content: center;
-  width: 100%;
-  flex: 0 3 0;
-`;
-export const Row = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-
-  width: 100%;
-  flex: 0 3 0;
-
-  height: 100%;
-  align-items: center;
-
-  @media screen and (min-width: 668px) {
-    flex-direction: row;
-  }
-`;
 
 export const SideFilter = styled.section`
   @media screen and (max-width: 768px) {

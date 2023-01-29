@@ -1,13 +1,12 @@
-import { Container, Wrapper } from "./styles";
+import { Container } from "./styles";
 
 const Footer = () => {
   return (
-    <Wrapper>
-      <Container>
+    <Container>
+      <small>
         <p>&copy; 2022 - 2023 All Rights Reserved</p>
-        
-      </Container>
-    </Wrapper>
+      </small>
+    </Container>
   );
 };
 

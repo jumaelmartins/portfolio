@@ -5,7 +5,6 @@ import {
   Row,
   SecondPage,
   Title,
-  p,
 } from "./styles";
 
 
@@ -13,7 +12,7 @@ import { MainBG } from "../home/styles";
 
 import Skills from "../skills";
 
-const AboutCard = ({ title, leftIcon, p }) => {
+const AboutCard = () => {
  
   return (
     <SecondPage>

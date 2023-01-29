@@ -1,14 +1,14 @@
 import { CardImg, CardLink, Column, Row, Container, TitleCard, Wrapper } from "./styles";
 
 
-const Card = ( {img, title, run, repo} ) => {
+const Card = ( {img, title, run, repo, alt} ) => {
     return (
         <Wrapper>
             <Container>
                 <Column>
                     <TitleCard>{title}</TitleCard>
                     <CardImg>
-                        <img src={img}/>
+                        <img alt={alt} src={img}/>
                     </CardImg>
                     <Row>
                         <CardLink href={run} target="_blank"> Run </CardLink>

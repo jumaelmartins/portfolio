@@ -13,7 +13,7 @@ export const Container = styled.div`
   padding-top: 5rem;
 `;
 
-export const AboutContainer = styled.div`
+export const AboutContainer = styled.section`
   margin: 1.5rem 0 0;
   display: flex;
   flex-direction: column;
@@ -26,7 +26,7 @@ export const AboutContainer = styled.div`
   }
 `;
 
-export const Title = styled.h1`
+export const Title = styled.h2`
   margin: 6rem 0;
   font-size: 2rem;
   color: cyan;
@@ -45,7 +45,7 @@ export const Title = styled.h1`
   }
 `;
 
-export const Text = styled.p`
+export const Text = styled.article`
   font-size: 1rem;
   margin: 1.5rem auto;
   font-weight: normal;

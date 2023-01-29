@@ -17,13 +17,13 @@ const Home = () => {
           <h2> Densevolvedor Front-End</h2>
           <Text>Bem Vindo(a) ao meu site pessoal!</Text>
           <div>
-            <GitHub href="https://github.com/jumaelmartins" target={'_blank'}>
+            <GitHub title="Link to github" href="https://github.com/jumaelmartins" target={'_blank'}>
               <GitHubIcon color="inherit" fontSize="inherit" />
             </GitHub>
-            <Linkedin href="https://www.linkedin.com/in/jumael-martins/" target={'_blank'}>
+            <Linkedin title="Link to linkedin" href="https://www.linkedin.com/in/jumael-martins/" target={'_blank'}>
               <LinkedInIcon color="inherit" fontSize="inherit" />
             </Linkedin>
-            <WhatsApp href="https://wa.me/71996040206" target={'_blank'}>
+            <WhatsApp title="Link to whatsapp" href="https://wa.me/71996040206" target={'_blank'}>
               <WhatsAppIcon color="inherit" fontSize="inherit" />
             </WhatsApp>
           </div>

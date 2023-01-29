@@ -1,20 +1,28 @@
 import { Container, MenuItems } from "./styles";
 
-const Menu = ({ variant = "desktop", active = true, select}) => {
+const Menu = ({ variant = "desktop", active = true}) => {
   return (
     <Container menu={active} variant={variant}>
-      <MenuItems href="\" variant={variant}>
-        Home
-      </MenuItems>
-      <MenuItems href="\about" variant={variant}>
-        About Me
-      </MenuItems>
-      <MenuItems href="\projects" variant={variant}>
-        Projects
-      </MenuItems>
-      <MenuItems href="\contact" variant={variant}>
-        Contact Me
-      </MenuItems>
+      <li>
+        <MenuItems title="Link to Home" href="\" variant={variant}>
+          Home
+        </MenuItems>
+      </li>
+      <li>
+        <MenuItems title="Link to about page" href="\about" variant={variant}>
+          About Me
+        </MenuItems>
+      </li>
+      <li>
+        <MenuItems title="Link to projects page" href="\projects" variant={variant}>
+          Projects
+        </MenuItems>
+      </li>
+      <li>
+        <MenuItems title="Link to contact page" href="\contact" variant={variant}>
+          Contact Me
+        </MenuItems>
+      </li>
     </Container>
   );
 };

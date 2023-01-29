@@ -153,7 +153,7 @@ export const Text = styled.p`
   }
 `;
 
-export const MainBG = styled.div`
+export const MainBG = styled.section`
   display: flex;
   flex-direction: column;
   width: 100%;
