@@ -32,8 +32,8 @@ export const Container = styled.div`
   }
 `;
 export const Svglogo = styled.svg`
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
   fill: white;
   cursor: pointer;
   max-width: 100%;
@@ -117,6 +117,7 @@ export const Column = styled.div`
   align-items: center;
   display: flex;
   
+  margin: .5rem;
   justify-content: center;
   flex-flow: column;
   max-width: 100%;
@@ -125,11 +126,10 @@ export const Column = styled.div`
     font-size: 2rem;
   }
 
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-    width: 50rem;
+  @media screen and (min-width: 768px) { 
     max-width: 100%;
-    flex-wrap: wrap;
+    flex-flow:row wrap;
+    justify-content: start;
   }
 
 `;

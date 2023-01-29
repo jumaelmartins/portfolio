@@ -5,7 +5,7 @@ export const Dashboard = styled.div`
   width: 40rem;
   height: 40rem;
   border-radius: 2.2rem;
-
+ 
   justify-self: center;
   background-color: #a1a8b3;
   display: flex;
@@ -20,6 +20,7 @@ export const Dashboard = styled.div`
     max-width: 100%;
     border: 3px solid lightgray;
 
+    justify-content: center;
     padding: .7rem;
     border-radius: 2.2rem;
     margin: 0.5rem;
@@ -32,12 +33,18 @@ export const Dashboard = styled.div`
       text-align: center;
       margin: .2rem;
       overflow: hidden;
+      
+      line-height: normal;
     }
   }
 
   @media screen and (max-width: 560px) {
     width: 30rem;
     height: 30rem;
+
+    p {
+      font-size: 1.35rem;
+    }
 
     div {
       width: 15rem;
