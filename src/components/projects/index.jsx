@@ -12,6 +12,7 @@ import {
 import Portifolio from "../../assets/img/portifolio.png";
 import CalculadoraImc from "../../assets/img/calculadora.imc.png";
 import Pokedex from "../../assets/img/pokedex.png";
+import Agenda from "../../assets/img/agenda.png";
 import LandinPage from "../../assets/img/landinPage.png";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import { useState } from "react";
@@ -138,6 +139,13 @@ const Projects = () => {
                     alt={"Thumb do projeto LandingPage"}
                     run={"https://jumaelmartins.github.io/Landing-Page/"}
                     repo={"https://github.com/jumaelmartins/Landing-Page.git"}
+                  />
+                  <Card
+                    title={"AGENDA"}
+                    img={Agenda}
+                    alt={"Thumb do projeto Agenda"}
+                    run={"http://191.234.193.85/"}
+                    repo={"https://github.com/jumaelmartins/Agenda.git"}
                   />
             </ProjectContainer>
           </GridCollumn>
