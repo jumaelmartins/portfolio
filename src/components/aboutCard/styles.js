@@ -7,9 +7,9 @@ export const Dashboard = styled.div`
   border-radius: 2.2rem;
  
   justify-self: center;
-  background-color: #a1a8b3;
   display: flex;
   flex-direction: column;
+  box-shadow: 1px 1px 1px 1px gray;
 
   animation: slide linear 1s;
 
@@ -18,14 +18,26 @@ export const Dashboard = styled.div`
     flex-direction: column;
     width: 20rem;
     max-width: 100%;
-    border: 3px solid lightgray;
+    cursor: pointer;
+    
+    transition: all 1s;
+
+        :hover {
+          background-color: darkblue;
+          p {
+            color: #fff;
+          }
+        }
 
     justify-content: center;
     padding: .7rem;
     border-radius: 2.2rem;
     margin: 0.5rem;
-    background-color: white;
+    background-color: cyan;
 
+    b {
+      color: white;
+    }
     
 
     p {
@@ -33,8 +45,8 @@ export const Dashboard = styled.div`
       text-align: center;
       margin: .2rem;
       overflow: hidden;
-      
       line-height: normal;
+      color: #2e2e2e;
     }
   }
 
@@ -95,6 +107,7 @@ export const AboutContainer = styled.section`
 
   h2 {
     font-size: 2rem;
+    color: lightgray;
   }
 
   div {
@@ -152,3 +165,58 @@ export const Title = styled.h2`
     max-width: 100%;
   }
 `;
+
+export const Education = styled.div`
+  ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    li {
+      display: flex;
+      justify-content: space-evenly;
+
+      div {
+        color: white;
+        background-color: cyan;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        border-radius: 100%;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+        transition: all 1s;
+
+        :hover {
+          background-color: darkblue;
+        }
+
+        ::after {
+          content: "";
+          position: absolute;
+          background-color: white;
+          height: 100%;
+          border: 3px dashed lightgray;
+          bottom: -125%;
+        }
+      }
+
+      span {
+        margin: 1rem .5rem;
+        box-shadow: 1px 1px 1px 1px gray;
+        display: flex;
+        width: 32rem;
+        max-width: 85%;
+        flex-direction: column;
+      }
+
+      p{
+        max-width: 80%;
+        margin: 0 1rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+`

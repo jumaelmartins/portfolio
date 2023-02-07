@@ -5,15 +5,15 @@ import {
   Row,
   SecondPage,
   Title,
+  Education,
 } from "./styles";
 
-
+import SchoolIcon from "@mui/icons-material/School";
 import { MainBG } from "../home/styles";
 
 import Skills from "../skills";
 
 const AboutCard = () => {
- 
   return (
     <SecondPage>
       <Container>
@@ -35,13 +35,28 @@ const AboutCard = () => {
             </section>
             <section>
               <h2>EDUCATION</h2>
-              <p>
-                Estacio - Bacharelado, Ciências da Computação - 10/2022 á
-                03/2025
-              </p>
-              <p>
-                Estacio - Tecnologo, Redes de Computadores - 01/2019 á 09/2022
-              </p>
+              <Education>
+                <ul>
+                  <li>
+                    <div>
+                      <SchoolIcon fontSize="large" color="inherit" />
+                    </div>
+                    <span>
+                      <p>Estacio - Bacharelado, Ciências da Computação</p>
+                      <p>10/2022 á 03/2025</p>
+                    </span>
+                  </li>
+                  <li>
+                    <div>
+                      <SchoolIcon fontSize="large" color="inherit" />
+                    </div>
+                    <span>
+                      <p>Estacio - Tecnologo, Redes de Computadores</p>
+                      <p>01/2019 á 09/2022</p>
+                    </span>
+                  </li>
+                </ul>
+              </Education>
             </section>
           </div>
           <Dashboard>
