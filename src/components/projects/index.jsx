@@ -14,6 +14,8 @@ import CalculadoraImc from "../../assets/img/calculadora.imc.png";
 import Pokedex from "../../assets/img/pokedex.png";
 import Agenda from "../../assets/img/agenda.png";
 import LandinPage from "../../assets/img/landinPage.png";
+import NewHomePage from "../../assets/img/NewsHome.jpg"
+
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import { useState } from "react";
 
@@ -146,6 +148,13 @@ const Projects = () => {
                     alt={"Thumb do projeto Agenda"}
                     run={"http://191.234.193.85/"}
                     repo={"https://github.com/jumaelmartins/Agenda.git"}
+                  />
+                   <Card
+                    title={"NEWS HOMEPAGE"}
+                    img={NewHomePage}
+                    alt={"Thumb do projeto NewHomePage"}
+                    run={"https://jumaelmartins.github.io/Frontend-Mentor-News-homepage/"}
+                    repo={"https://github.com/jumaelmartins/Frontend-Mentor-News-homepage"}
                   />
             </ProjectContainer>
           </GridCollumn>
