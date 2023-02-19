@@ -32,8 +32,9 @@ Usuario será capaz de:
 
 ### Links
 
-- Codigo Github URL: [](https://github.com/jumaelmartins/portfolio)
-- Site URL: [](https://portfolio-jumaelmartins.vercel.app/)
+- Codigo Github URL: [https://github.com/jumaelmartins/portfolio](https://github.com/jumaelmartins/portfolio)
+- Site URL: [https://github.com/jumaelmartins/portfolio](https://portfolio-jumaelmartins.vercel.app/)
+
 
 ### Ferramentas Utilizadas
 
