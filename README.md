@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# Portifolio Web-Page
+Olá, esse projeto é um website no estilo Portfolio pessoal. Aqui você encontrara informações sobre mim e verá alguns de meus projetos, tambem encontra o link para minhas redes sociais para poder me localizar. :D
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Lista de Condeudo
 
-## Available Scripts
+- [Visão Geral](#visão-geral)
+  - [Projeto](#projeto)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [Desenvolvimento](#desenvolvimento)
+  - [Ferramentas utilizadas](#ferramentas-utilizadas)
+  - [Aprendizado](#o-que-aprendi)
+- [Onde Me Encontrar?](#redes-sociais)
 
-In the project directory, you can run:
+## Visão Geral
 
-### `npm start`
+### Projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Usuario será capaz de:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Navegar entre as paginas Home, About, Projects e Contact,
+- Ser direcionado as Redes sociais ao clica nos links
+- Ser direcionado ao site com o deploy dos projetos e github para ver os codigos.
+- Ter uma visualização otimizada de acordo com a interface de seu dispositivo, tamanho de tela mobile ou desktop.
+- Efeito visual de hover e focos para os elementos interativos na pagina, Menu, Links e Cards.
 
-### `npm test`
+### Screenshot
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+![](./src/assets/img/screenshot.jpg)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Links
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Codigo Github URL: [](https://github.com/jumaelmartins/portfolio)
+- Site URL: [](https://portfolio-jumaelmartins.vercel.app/)
 
-### `npm run eject`
+### Ferramentas Utilizadas
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- HTML5 Semantico
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Styled Components](https://styled-components.com/) - For styles
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Desenvolvimento
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### O que aprendi
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```react route
+  utilização de rotas no react, no trecho codigo abaixo eu utilzo para alterar navehação entre as paginas do site:
+  
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage/>}/>
+          <Route path="/about" element={<AboutPage/>}/>
+          <Route path="/projects" element={<ProjectsPage/>}/>
+          <Route path="/contact" element={<ContactPage/>}/>
+        </Routes>
+      </Router> 
+```
+```styled components
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+aprendi como fazer estilização atraves de props passsadas no componente.
+aqui um exmeplo de utilização.
+se a propriedade active for false o menu mobile é desabilitado alterando o display para none.
 
-### Code Splitting
+  ${({ active }) =>
+    active !== true &&
+    css`
+      display: none;
+    `}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Redes Sociais
 
-### Analyzing the Bundle Size
+- Linkedin - [@jumael-martins](https://www.linkedin.com/in/jumael-martins/)
+- GitHub - [@jumaelmartins](https://github.com/jumaelmartins)
+- Frontend Mentor - [@jumaelmartins](https://www.frontendmentor.io/profile/jumaelmartins)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
