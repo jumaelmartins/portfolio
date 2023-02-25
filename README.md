@@ -18,11 +18,20 @@ Olá, esse projeto é um website no estilo Portfolio pessoal. Aqui você encontr
 
 Usuario será capaz de:
 
+Já implementado:
+
 - Navegar entre as paginas Home, About, Projects e Contact,
 - Ser direcionado as Redes sociais ao clica nos links
 - Ser direcionado ao site com o deploy dos projetos e github para ver os codigos.
 - Ter uma visualização otimizada de acordo com a interface de seu dispositivo, tamanho de tela mobile ou desktop.
 - Efeito visual de hover e focos para os elementos interativos na pagina, Menu, Links e Cards.
+
+Futuras Features a serem impplementadas:
+
+- Filtragem dos Projetos por Nome, Tech, Stack e Nivel de dificuldade.
+- Paginação para Projetos
+- Descrição detalhada de cada Projeto ao Hover no Card.
+- Formulario para Contato.
 
 ### Screenshot
 
